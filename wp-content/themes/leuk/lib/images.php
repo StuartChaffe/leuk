@@ -25,10 +25,9 @@ function origin_remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
 }
 add_filter( 'post_thumbnail_html', 'origin_remove_thumbnail_dimensions', 10, 3 );
 
-function add_file_types_to_uploads($file_types){
-	$new_filetypes = array();
-	$new_filetypes['svg'] = 'image/svg+xml';
-	$file_types = array_merge($file_types, $new_filetypes );
-	return $file_types;
+function enable_svg_upload( $upload_mimes ) {
+    $upload_mimes['svg'] = 'image/svg+xml';
+    $upload_mimes['svgz'] = 'image/svg+xml';
+    return $upload_mimes;
 }
-add_filter('upload_mimes', 'add_file_types_to_uploads');
+add_filter( 'upload_mimes', 'enable_svg_upload', 10, 1 );

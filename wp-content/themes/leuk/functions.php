@@ -6,6 +6,9 @@ require_once( 'lib/theme-setup.php' );
 // Load scrips
 require_once( 'lib/enqueue.php' );
 
+// Images
+require_once( 'lib/images.php' );
+
 // Configure menus
 require_once( 'lib/menus.php' );
 
