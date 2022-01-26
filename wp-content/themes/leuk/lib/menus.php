@@ -5,5 +5,6 @@
  */
 register_nav_menus(array(
 	'primary'   => __( 'Primary' ),
+	'mobile'   => __( 'Mobile' ),
 	// 'secondary' => __( 'Secondary' ),
 ));

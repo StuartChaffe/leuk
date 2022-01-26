@@ -15,6 +15,12 @@ $logodatacentre = get_field( 'logo_datacentre', 'options');
 			<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
 		</nav>
 
+		<div class="global-header--nav-contact">
+			<a href="">Contact Us</a>
+		</div>
+
+
+
 		<button class="global-header--nav-btn" type="button">
 			<span class="global-header--nav-box">
 				<span class="global-header--nav-inner"><span>Show menu</span></span>
@@ -22,7 +28,7 @@ $logodatacentre = get_field( 'logo_datacentre', 'options');
 		</button>
 
 		<nav class="global-header--nav global-header--nav__mobile">
-			<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+			<?php wp_nav_menu( array('theme_location' => 'mobile') ); ?>
 		</nav>
 	</div>
 </header>

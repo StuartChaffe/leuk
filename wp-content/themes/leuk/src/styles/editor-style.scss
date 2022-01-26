@@ -3,7 +3,25 @@
 @import "utilities/mq";
 @import "utilities/mixins";
 @import "variables";
+@import "utilities/helpers";
 
 // Base
 @import "base/base";
 @import "base/typography";
+@import "base/typography";
+@import "components/*";
+@import "components/*";
+
+/* Stop links being clickable in the block editor */
+.acf-block-preview a {
+	pointer-events: none !important;
+}
+
+.wp-block[data-align=wide] {
+	max-width: var(--container-large);
+}
+
+.wp-block {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
