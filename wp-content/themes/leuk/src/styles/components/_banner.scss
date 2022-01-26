@@ -8,7 +8,7 @@
 	background-position: center center;
 	width: 100%;
 	min-height: 100vh;
-    padding: var(--spacing);
+	padding: var(--spacing);
 	@include mq($until: medium) {
 		background-image: none !important;
 	}
@@ -16,9 +16,9 @@
 		flex-direction: row;
 		height: 100vh;
 		min-height: 600px;
-        padding: var(--spacing-xxl);
+		padding: var(--spacing-xxl);
 	}
-    &--image {
+	&--image {
 		position: absolute;
 		z-index: 1;
 		top: 50%;
@@ -32,38 +32,38 @@
 			display: none;
 		}
 	}
-    &--content {
-        display: flex;
-        flex-direction: column;
-        margin-top: auto;
+	&--content {
+		display: flex;
+		flex-direction: column;
+		margin-top: auto;
 		z-index: 2;
-        width: 100%;
-        @include mq(medium) {
-            flex-direction: row;
-        }
+		width: 100%;
+		@include mq(medium) {
+			flex-direction: row;
+		}
 	}
-    &--text {
-        width: 60%;
-        h1, h2, h3, h4, h5, p, a {
+	&--text {
+		width: 60%;
+		h1, h2, h3, h4, h5, p, a {
 			color: white;
 		}
-        p {
-            margin: 0;
-        }
-        img {
-            margin-bottom: 2rem;
-        }
-    }
-    &--button {
-        display: flex;
-        width: 40%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 0;
-        @include mq(medium) {
-            justify-content: center;
-            margin-top: auto;
-            margin-left: 4rem;
-        }
-    }
+		p {
+			margin: 0;
+		}
+		img {
+			margin-bottom: 2rem;
+		}
+	}
+	&--button {
+		display: flex;
+		width: 40%;
+		margin-top: 1rem;
+		// margin-bottom: 1rem;
+		margin-left: 0;
+		@include mq(medium) {
+			justify-content: center;
+			margin-top: auto;
+			margin-left: 4rem;
+		}
+	}
 }

@@ -16,8 +16,9 @@
 	&:hover, &:focus,
 	a:hover, a:focus {
 		outline: 0;
-		color: var(--color-text-dark);
+		color: white;
 		text-decoration: none;
+		background-color: var(--color-primary-dark);
 		// box-shadow: inset 0px 0px 0px 3px white;
 	}
 }
@@ -41,6 +42,7 @@ span.btn {
 	}
 	&:hover {
 		border-color: var(--color-text-dark);
+		background-color: var(--color-primary-dark);
 		// &:before {
 		// 	left: -10%;
 		// 	width: 120%;

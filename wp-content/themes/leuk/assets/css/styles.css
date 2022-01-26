@@ -23,6 +23,7 @@
   --color-secondary: #58AD69;
   --color-tertiary: #FFBC49;
   --color-quaternary: #E2574C;
+  --color-primary-dark: #BB1622;
   --color-text-base: #0d0e0e;
   --color-text-dark: #181822;
   --color-text-reversed: #fff;
@@ -48,7 +49,7 @@
 @media (min-width: 70em) {
   :root {
     --font-size-h1: calc(3.2rem + 0.2vw);
-    --font-size-h2: calc(1.2rem + 0.2vw);
+    --font-size-h2: calc(1.5rem + 0.2vw);
     --font-size-h3: calc(1rem + 0.2vw);
     --font-size-h4: calc(1.4rem + 0.2vw);
     --font-size-h5: calc(1.2rem + 0.2vw);
@@ -153,7 +154,9 @@ select {
   }
 }
 p {
-  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-xs);
+}
+p:last-of-type {
   margin-bottom: 0;
 }
 
@@ -213,7 +216,7 @@ h5 {
   margin: 0;
   margin-bottom: 0.5rem;
   line-height: var(--line-height-headings);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-heavy);
   color: var(--heading-color);
 }
 
@@ -532,8 +535,9 @@ input[type=button]:focus {
 .btn:hover, .btn:focus,
 .btn a:hover, .btn a:focus {
   outline: 0;
-  color: var(--color-text-dark);
+  color: white;
   text-decoration: none;
+  background-color: var(--color-primary-dark);
 }
 
 span.btn {
@@ -553,6 +557,7 @@ span.btn a:hover {
 }
 span.btn:hover {
   border-color: var(--color-text-dark);
+  background-color: var(--color-primary-dark);
 }
 
 .btn--primary {
@@ -668,7 +673,7 @@ span.btn:hover {
 .global-header--nav-contact a:hover {
   transition: all 0.1s ease-in-out;
   text-decoration: none;
-  box-shadow: inset 0px 0px 0px 3px var(--color-text-base);
+  background-color: var(--color-grey);
 }
 .global-header--nav ul {
   padding-left: 0;
@@ -808,7 +813,7 @@ span.btn:hover {
 }
 @media (min-width: 50em) {
   .menu .sub-menu {
-    min-width: 200px;
+    min-width: 250px;
     margin: 0 1rem;
     position: absolute;
     transform: translateY(20px) translateX(-50%);
@@ -1109,7 +1114,6 @@ body.nav-open {
   display: flex;
   width: 40%;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   margin-left: 0;
 }
 @media (min-width: 50em) {
@@ -1118,6 +1122,168 @@ body.nav-open {
     margin-top: auto;
     margin-left: 4rem;
   }
+}
+
+:root {
+  --swiper-theme-color: red;
+}
+
+.swiper {
+  width: 100%;
+  min-height: 300px;
+  height: 100vh;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.swiper-slide-image {
+  width: 100%;
+  display: none;
+}
+.swiper--content {
+  position: absolute;
+  bottom: var(--spacing-xxl);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding-left: var(--spacing-xxl);
+  padding-right: var(--spacing-xxl);
+  z-index: 2;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .swiper--content {
+    flex-direction: row;
+  }
+}
+.swiper--text {
+  width: 60%;
+}
+.swiper--text h1, .swiper--text h2, .swiper--text h3, .swiper--text h4, .swiper--text h5, .swiper--text p, .swiper--text a {
+  color: white;
+}
+.swiper--text p {
+  margin: 0;
+}
+.swiper--text img {
+  margin-bottom: 2rem;
+}
+.swiper--button {
+  display: flex;
+  width: 40%;
+  margin-top: 1rem;
+  margin-left: 0;
+}
+@media (min-width: 50em) {
+  .swiper--button {
+    justify-content: center;
+    margin-top: auto;
+    margin-left: 4rem;
+  }
+}
+
+.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  width: 30px;
+  height: 60px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 2rem;
+  left: auto;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: url("../../src/icons/carousel-next.svg");
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 2rem;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: url("../../src/icons/carousel-prev.svg");
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+.swiper-pointer-events.swiper-vertical {
+  touch-action: pan-x;
+}
+
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+
+/* Auto Height */
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+
+.swiper-fade.swiper-free-mode .swiper-slide {
+  transition-timing-function: ease-out;
+}
+
+.swiper-fade .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
+}
+
+.swiper-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-fade .swiper-slide-active, .swiper-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
 }
 
 .u-bold {

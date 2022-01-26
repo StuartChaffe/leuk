@@ -46,8 +46,8 @@ function leuk_acf_blocks() {
 			'category'			=> 'leuk-blocks',
 			'icon'				=> 'slides',
 			'align' 			=> 'full',
-			'mode' 				=> 'edit',
-			'keywords'			=> array( 'carousel' ),
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'carousel, image slider, swiper' ),
 		));
 		acf_register_block(array(
 			'name'				=> 'content',
@@ -68,7 +68,7 @@ function leuk_acf_blocks() {
 			'category'			=> 'leuk-blocks',
 			'icon'				=> 'megaphone',
 			'align' 			=> 'wide',
-			'mode' 				=> 'edit',
+			'mode' 				=> 'preview',
 			'keywords'			=> array( 'cta, call to action' ),
 		));
 		acf_register_block(array(
@@ -79,7 +79,7 @@ function leuk_acf_blocks() {
 			'category'			=> 'leuk-blocks',
 			'icon'				=> 'screenoptions',
 			'align' 			=> 'wide',
-			'mode' 				=> 'edit',
+			'mode' 				=> 'preview',
 			'keywords'			=> array( 'posts, featured' ),
 		));
 		acf_register_block(array(
@@ -90,7 +90,7 @@ function leuk_acf_blocks() {
 			'category'			=> 'leuk-blocks',
 			'icon'				=> 'calendar-alt',
 			'align' 			=> 'wide',
-			'mode' 				=> 'edit',
+			'mode' 				=> 'preview',
 			'keywords'			=> array( 'posts, blogs' ),
 		));
 		// acf_register_block(array(
@@ -116,9 +116,9 @@ function leuk_acf_block_render_callback( $block ) {
 }
 
 add_filter( 'allowed_block_types_all', 'leuk_allowed_block_types' );
- 
+
 function leuk_allowed_block_types( $allowed_blocks ) {
- 
+
 	return array(
 		'acf/banner',
 		'acf/carousel',
@@ -128,9 +128,9 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/posts',
 		// 'acf/testimonial',
 	);
- 
+
 }
-  
+
 add_action('acf/render_field_settings/type=image', 'add_default_value_to_image_field');
 function add_default_value_to_image_field($field) {
 	acf_render_field_setting( $field, array(

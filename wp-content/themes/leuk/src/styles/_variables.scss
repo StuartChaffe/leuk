@@ -27,6 +27,7 @@
 	--color-secondary: #58AD69;
 	--color-tertiary: #FFBC49;
 	--color-quaternary: #E2574C;
+	--color-primary-dark: #BB1622;
 
 	--color-text-base: #0d0e0e;
 	--color-text-dark: #181822;
@@ -57,7 +58,7 @@
 
 	@include mq(large) {
 		--font-size-h1: calc(3.2rem + 0.2vw);
-		--font-size-h2: calc(1.2rem + 0.2vw);
+		--font-size-h2: calc(1.5rem + 0.2vw);
 		--font-size-h3: calc(1rem + 0.2vw);
 		--font-size-h4: calc(1.4rem + 0.2vw);
 		--font-size-h5: calc(1.2rem + 0.2vw);
