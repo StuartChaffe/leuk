@@ -1,19 +1,35 @@
 .global-footer {
 	margin-top: auto;
-	text-align: center;
 	background-color: var(--color-grey-dark);
-	padding: var(--spacing);
-}
-
-.global-footer__inner {
-	@extend .container;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.global-footer p {
+	padding: var(--spacing-xl) 0;
 	color: white;
-	margin: 0;
-	font-size: var(--font-size-small);
+
+	&__inner {
+		@extend .container;
+		display: flex;
+		// justify-content: space-between;
+		// align-items: center;
+	}
+
+	p, a {
+		color: white;
+		margin: 0;
+		font-size: var(--font-size-small);
+	}
+
+	&--company {
+		border-right: 1px solid rgba(255, 255, 255, 0.4);
+		padding-right: var(--spacing-xl);
+		img {
+			margin-bottom: var(--spacing-l)
+		}
+	}
+	&--content {
+		padding-left: var(--spacing-xl);
+
+		ul {
+			margin: 0 0 2rem 0;
+			padding: 0;
+		}
+	}
 }

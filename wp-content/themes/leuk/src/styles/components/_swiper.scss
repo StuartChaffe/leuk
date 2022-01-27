@@ -8,7 +8,6 @@
 	height: 100vh;
 	overflow: hidden;
 
-
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -36,14 +35,19 @@
 	}
 
 	&--content {
+		@extend .container;
+		left: 50%;
+    	transform: translateX(-50%);
+
+
 		position: absolute;
-		bottom: var(--spacing-xxl);
-		left: 0;
+		bottom: var(--spacing-xl);
+		// left: 0;
 		display: flex;
 		flex-direction: column;
 		margin-top: auto;
-		padding-left: var(--spacing-xxl);
-		padding-right: var(--spacing-xxl);
+		// padding-left: var(--spacing-xxl);
+		// padding-right: var(--spacing-xxl);
 		z-index: 2;
 		width: 100%;
 		@include mq(medium) {

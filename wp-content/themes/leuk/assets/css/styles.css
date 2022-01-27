@@ -42,7 +42,7 @@
   --spacing: 30px;
   --spacing-s: 15px;
   --spacing-xs: 10px;
-  --container-width: 75rem;
+  --container-width: 1700px;
   --container-width-l: 100rem;
   --content-width: 50rem;
 }
@@ -398,9 +398,9 @@ input[type=button]:focus {
   min-height: 100%;
 }
 
-.container, .global-footer__inner, .main {
+.container, .swiper--content, .banner--content, .global-footer__inner, .main {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 0 var(--spacing-xl);
   width: 100%;
   max-width: var(--container-width);
 }
@@ -1011,21 +1011,31 @@ body.nav-open {
 
 .global-footer {
   margin-top: auto;
-  text-align: center;
   background-color: var(--color-grey-dark);
-  padding: var(--spacing);
+  padding: var(--spacing-xl) 0;
+  color: white;
 }
-
 .global-footer__inner {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
-.global-footer p {
+.global-footer p, .global-footer a {
   color: white;
   margin: 0;
   font-size: var(--font-size-small);
+}
+.global-footer--company {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  padding-right: var(--spacing-xl);
+}
+.global-footer--company img {
+  margin-bottom: var(--spacing-l);
+}
+.global-footer--content {
+  padding-left: var(--spacing-xl);
+}
+.global-footer--content ul {
+  margin: 0 0 2rem 0;
+  padding: 0;
 }
 
 .social-links {
@@ -1051,7 +1061,8 @@ body.nav-open {
   background-position: center center;
   width: 100%;
   min-height: 100vh;
-  padding: var(--spacing);
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing-xl);
 }
 @media (max-width: 49.99em) {
   .banner {
@@ -1063,7 +1074,6 @@ body.nav-open {
     flex-direction: row;
     height: 100vh;
     min-height: 600px;
-    padding: var(--spacing-xxl);
   }
 }
 .banner--image {
@@ -1271,14 +1281,13 @@ body.nav-open {
   display: none;
 }
 .swiper--content {
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
-  bottom: var(--spacing-xxl);
-  left: 0;
+  bottom: var(--spacing-xl);
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  padding-left: var(--spacing-xxl);
-  padding-right: var(--spacing-xxl);
   z-index: 2;
   width: 100%;
 }
