@@ -5,18 +5,13 @@
 		margin-left: auto;
 	}
 
-	h2,
-	h3,
-	h4,
-	h5 {
-		margin-top: var(--spacing-l);
-		margin-bottom: 0;
-	}
-
 	a {
 		color: var(--link-color);
 		text-decoration: underline;
 		text-decoration-color: var(--link-hover-color);
+	}
+	.btn a {
+		text-decoration: none;
 	}
 
 	a:hover {

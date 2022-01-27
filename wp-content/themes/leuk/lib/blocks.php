@@ -61,6 +61,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'content' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'change-content',
+			'title'				=> __('Content changer'),
+			'description'		=> __('Add a block that changes content on hover'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'align-pull-right',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'content, changing' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'cta',
 			'title'				=> __('Call to action'),
 			'description'		=> __('Add a CTA block'),
@@ -123,6 +134,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/banner',
 		'acf/carousel',
 		'acf/content',
+		'acf/change-content',
 		'acf/cta',
 		'acf/featured-posts',
 		'acf/posts',

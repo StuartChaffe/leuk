@@ -17,7 +17,7 @@ remove_action( 'wp_head', 'wp_generator' );
 remove_action( 'wp_head', 'feed_links', 2  );
 remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'index_rel_link' );
-remove_action( 'wp_head', 'wlwmanifest_link') ;	
+remove_action( 'wp_head', 'wlwmanifest_link') ;
 remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
@@ -35,7 +35,7 @@ add_editor_style( 'assets/css/editor-style.css' );
 /**
  * Add no-js class to body
  */
- 
+
 function origin_no_js_body_classes( $classes ) {
     return array_merge( $classes, array( 'no-js' ) );
 }
@@ -44,7 +44,7 @@ add_filter( 'body_class', 'origin_no_js_body_classes', 20 );
 function filter_ptags_on_images($content){
     return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
  }
- 
+
  add_filter('the_content', 'filter_ptags_on_images');
 
 
@@ -71,20 +71,26 @@ function add_style_select_buttons( $buttons ) {
 	return $buttons;
 }
 add_filter( 'mce_buttons_2', 'add_style_select_buttons' );
-function my_custom_styles( $init_array ) {  
-	$style_formats = array(  
-		array(  
-			'title' => 'Heavy',  
-			'block' => 'p',  
+function my_custom_styles( $init_array ) {
+	$style_formats = array(
+		array(
+			'title' => 'Heavy',
+			'block' => 'p',
 			'classes' => 'heavy',
 			'wrapper' => false,
-		), 
-	);  
+		),
+		array(
+			'title' => 'Button',
+			'block' => 'span',
+			'classes' => 'btn btn--primary',
+			'wrapper' => false,
+		),
+	);
 	// Insert the array, JSON ENCODED, into 'style_formats'
-	$init_array['style_formats'] = json_encode( $style_formats );  
+	$init_array['style_formats'] = json_encode( $style_formats );
 
-	return $init_array;  
+	return $init_array;
 
-	} 
-// Attach callback to 'tiny_mce_before_init' 
+	}
+// Attach callback to 'tiny_mce_before_init'
 add_filter( 'tiny_mce_before_init', 'my_custom_styles' );

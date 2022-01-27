@@ -10,10 +10,10 @@ $button = get_field('carousel_button');
 <!-- Swiper -->
 <div class="carousel swiper">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide" style="background-image: url('http://leuk.local:3000/wp-content/uploads/homepage-banner.jpg');"><img class="swiper-slide-image" src="http://leuk.local:3000/wp-content/uploads/homepage-banner.jpg" alt="" /></div>
-		<div class="swiper-slide" style="background-image: url('http://leuk.local/wp-content/uploads/carousel.jpg');"><img class="swiper-slide-image" src="http://leuk.local/wp-content/uploads/carousel.jpg" alt="" /></div>
-		<div class="swiper-slide" style="background-image: url('http://leuk.local:3000/wp-content/uploads/homepage-banner.jpg');"><img class="swiper-slide-image" src="http://leuk.local:3000/wp-content/uploads/homepage-banner.jpg" alt="" /></div>
-		<div class="swiper-slide" style="background-image: url('http://leuk.local/wp-content/uploads/carousel.jpg');"><img class="swiper-slide-image" src="http://leuk.local/wp-content/uploads/carousel.jpg" alt="" /></div>
+		<div class="swiper-slide" style="background-image: url('/wp-content/uploads/homepage-banner.jpg');"><img class="swiper-slide-image" src="http://leuk.local:3000/wp-content/uploads/homepage-banner.jpg" alt="" /></div>
+		<div class="swiper-slide" style="background-image: url('/wp-content/uploads/carousel.jpg');"><img class="swiper-slide-image" src="http://leuk.local/wp-content/uploads/carousel.jpg" alt="" /></div>
+		<div class="swiper-slide" style="background-image: url('/wp-content/uploads/homepage-banner.jpg');"><img class="swiper-slide-image" src="http://leuk.local:3000/wp-content/uploads/homepage-banner.jpg" alt="" /></div>
+		<div class="swiper-slide" style="background-image: url('/wp-content/uploads/carousel.jpg');"><img class="swiper-slide-image" src="http://leuk.local/wp-content/uploads/carousel.jpg" alt="" /></div>
 	</div>
 
 	<?php if ( $content ) { ?>
