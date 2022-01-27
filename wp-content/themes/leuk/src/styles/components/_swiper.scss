@@ -41,21 +41,22 @@
 
 
 		position: absolute;
-		bottom: var(--spacing-xl);
-		// left: 0;
+		bottom: var(--spacing-l);
 		display: flex;
 		flex-direction: column;
 		margin-top: auto;
-		// padding-left: var(--spacing-xxl);
-		// padding-right: var(--spacing-xxl);
 		z-index: 2;
 		width: 100%;
 		@include mq(medium) {
 			flex-direction: row;
+			bottom: var(--spacing-xl);
 		}
 	}
 	&--text {
-		width: 60%;
+		width: 90%;
+		@include mq(medium) {
+			width: 60%;
+		}
 		h1, h2, h3, h4, h5, p, a {
 			color: white;
 		}
@@ -76,6 +77,10 @@
 			justify-content: center;
 			margin-top: auto;
 			margin-left: 4rem;
+		}
+
+		.btn a {
+			white-space: nowrap;
 		}
 	}
 }

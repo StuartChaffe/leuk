@@ -10,9 +10,12 @@
 
 .container {
 	margin: 0 auto;
-	padding: 0 var(--spacing-xl);
+	padding: 0 var(--spacing);
 	width: 100%;
 	max-width: var(--container-width);
+	@include mq(medium) {
+		padding: 0 var(--spacing-xl);
+	}
 }
 
 .main {

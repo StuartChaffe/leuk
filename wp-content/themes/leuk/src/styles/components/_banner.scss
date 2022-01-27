@@ -7,9 +7,10 @@
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
+	min-height: 600px;
 	padding-top: var(--spacing);
-	padding-bottom: var(--spacing-xl);
+	padding-bottom: var(--spacing-l);
 	@include mq($until: medium) {
 		background-image: none !important;
 	}
@@ -17,6 +18,7 @@
 		flex-direction: row;
 		height: 100vh;
 		min-height: 600px;
+		padding-bottom: var(--spacing-xl);
 		// padding: var(--spacing-xxl);
 	}
 	&--image {
@@ -25,7 +27,8 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		max-width: 100%;
+		max-width: none;
+		// width: 100%;
 		min-width: calc(100% + 2px);
 		min-height: calc(100% + 2px);
 		display: block;
@@ -45,7 +48,10 @@
 		}
 	}
 	&--text {
-		width: 60%;
+		width: 90%;
+		@include mq(medium) {
+			width: 60%;
+		}
 		h1, h2, h3, h4, h5, p, a {
 			color: white;
 		}
@@ -54,12 +60,15 @@
 		}
 		img {
 			margin-bottom: 2rem;
+			@include mq($until: medium) {
+				width: 80%;
+			}
 		}
 	}
 	&--button {
 		display: flex;
 		width: 40%;
-		margin-top: 1rem;
+		margin-top: 2rem;
 		// margin-bottom: 1rem;
 		margin-left: 0;
 		@include mq(medium) {
