@@ -14,23 +14,24 @@
 		<div class="global-footer--content">
 			<ul>
 				<li><p>Services</p></li>
-				<li><a href="">Services</a></li>
-				<li><a href="">Services</a></li>
+				<li><a href="">Satellite Solutions</a></li>
+				<li><a href="">Data Centre</a></li>
 			</ul>
 
 			<ul>
 				<li><p>Resources</p></li>
-				<li><a href="">Services</a></li>
-				<li><a href="">Services</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Contact Us</a></li>
 			</ul>
 
 			<ul>
-				<li><p>facilities</p></li>
-				<li><a href="">Services</a></li>
-				<li><a href="">Services</a></li>
+				<li><p>Facilities</p></li>
+				<li><a href="">Leuk</a></li>
 			</ul>
 
-			<ul class="social-links">
+		</div>
+
+		<ul class="social-links">
 			<?php if(get_field('twitter', 'options')): ?>
 				<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
 			<?php endif; ?>
@@ -44,8 +45,6 @@
 				<li class="social-links__item"><a href="<?php the_field('youtube', 'options'); ?>" class="social-links__link"><?php echo get_icon('youtube'); ?></a></li>
 			<?php endif; ?>
 			</ul>
-
-		</div>
 	</div>
 	<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 </footer>

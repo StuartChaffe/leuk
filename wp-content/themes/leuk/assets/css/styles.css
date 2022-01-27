@@ -17,6 +17,7 @@
   --line-height: 1.5;
   --line-height-headings: 1.2;
   --color-grey-dark: #121619;
+  --color-grey-mid: #6e7271;
   --color-grey: #f1f1f1;
   --color-grey-light: #efefef;
   --color-primary: #e5152b;
@@ -1014,9 +1015,11 @@ body.nav-open {
   background-color: var(--color-grey-dark);
   padding: var(--spacing-xl) 0;
   color: white;
+  text-align: center;
 }
 .global-footer__inner {
   display: flex;
+  text-align: left;
 }
 .global-footer p, .global-footer a {
   color: white;
@@ -1032,6 +1035,10 @@ body.nav-open {
 }
 .global-footer--content {
   padding-left: var(--spacing-xl);
+}
+.global-footer--content ul p {
+  color: var(--color-grey-mid);
+  margin-bottom: 0.5rem;
 }
 .global-footer--content ul {
   margin: 0 0 2rem 0;

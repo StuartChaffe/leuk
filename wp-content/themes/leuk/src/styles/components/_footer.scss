@@ -3,10 +3,12 @@
 	background-color: var(--color-grey-dark);
 	padding: var(--spacing-xl) 0;
 	color: white;
+	text-align: center;
 
 	&__inner {
 		@extend .container;
 		display: flex;
+		text-align: left;
 		// justify-content: space-between;
 		// align-items: center;
 	}
@@ -26,6 +28,13 @@
 	}
 	&--content {
 		padding-left: var(--spacing-xl);
+
+		ul {
+			p {
+				color: var(--color-grey-mid);
+				margin-bottom: 0.5rem;
+			}
+		}
 
 		ul {
 			margin: 0 0 2rem 0;
