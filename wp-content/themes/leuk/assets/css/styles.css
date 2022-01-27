@@ -1031,6 +1031,7 @@ body.nav-open {
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-bottom: 2rem;
 }
 @media (min-width: 50em) {
   .global-footer__inner {
@@ -1049,6 +1050,7 @@ body.nav-open {
 @media (min-width: 50em) {
   .global-footer--company {
     border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 0;
     padding-right: var(--spacing-xl);
     padding-bottom: 0;
   }
@@ -1152,6 +1154,11 @@ body.nav-open {
 }
 @media (min-width: 50em) {
   .banner--text {
+    width: 70%;
+  }
+}
+@media (min-width: 70em) {
+  .banner--text {
     width: 60%;
   }
 }
@@ -1171,15 +1178,21 @@ body.nav-open {
 }
 .banner--button {
   display: flex;
-  width: 40%;
+  width: 100%;
   margin-top: 2rem;
   margin-left: 0;
 }
 @media (min-width: 50em) {
   .banner--button {
+    width: 30%;
     justify-content: center;
     margin-top: auto;
     margin-left: 4rem;
+  }
+}
+@media (min-width: 70em) {
+  .banner--button {
+    width: 40%;
   }
 }
 
@@ -1355,6 +1368,11 @@ body.nav-open {
 }
 @media (min-width: 50em) {
   .swiper--text {
+    width: 70%;
+  }
+}
+@media (min-width: 70em) {
+  .swiper--text {
     width: 60%;
   }
 }
@@ -1369,15 +1387,21 @@ body.nav-open {
 }
 .swiper--button {
   display: flex;
-  width: 40%;
+  width: 100%;
   margin-top: 1rem;
   margin-left: 0;
 }
 @media (min-width: 50em) {
   .swiper--button {
+    width: 30%;
     justify-content: center;
     margin-top: auto;
     margin-left: 4rem;
+  }
+}
+@media (min-width: 70em) {
+  .swiper--button {
+    width: 40%;
   }
 }
 .swiper--button .btn a {

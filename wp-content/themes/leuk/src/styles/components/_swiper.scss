@@ -55,6 +55,9 @@
 	&--text {
 		width: 90%;
 		@include mq(medium) {
+			width: 70%;
+		}
+		@include mq(large) {
 			width: 60%;
 		}
 		h1, h2, h3, h4, h5, p, a {
@@ -69,14 +72,18 @@
 	}
 	&--button {
 		display: flex;
-		width: 40%;
+		width: 100%;
 		margin-top: 1rem;
 		// margin-bottom: 1rem;
 		margin-left: 0;
 		@include mq(medium) {
+			width: 30%;
 			justify-content: center;
 			margin-top: auto;
 			margin-left: 4rem;
+		}
+		@include mq(large) {
+			width: 40%;
 		}
 
 		.btn a {
