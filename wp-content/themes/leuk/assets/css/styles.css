@@ -1151,6 +1151,7 @@ body.nav-open {
 }
 .banner--text {
   width: 90%;
+  margin-top: auto;
 }
 @media (min-width: 50em) {
   .banner--text {
@@ -1312,6 +1313,28 @@ body.nav-open {
   .content-two {
     display: none;
   }
+}
+
+.posts {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.posts-item {
+  background-color: var(--color-grey-light);
+  text-align: left;
+  text-decoration: none;
+  flex-grow: 0;
+  margin: var(--spacing-s);
+  width: calc(100% / 3 - 30px);
+}
+.posts-item--image {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.posts-item--image img {
+  width: 100%;
 }
 
 :root {

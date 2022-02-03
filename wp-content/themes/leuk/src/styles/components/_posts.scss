@@ -1,0 +1,24 @@
+.posts {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	&-item {
+		background-color: var(--color-grey-light);
+		text-align: left;
+		text-decoration: none;
+		flex-grow: 0;
+		margin: var(--spacing-s);
+		width: calc(100% / 3 - 30px);
+		@include mq(medium) {
+			// margin: 0 var(--spacing-xs);
+		}
+		&--image {
+			margin-bottom: 1rem;
+			position: relative;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -49,6 +49,7 @@
 	}
 	&--text {
 		width: 90%;
+		margin-top: auto;
 		@include mq(medium) {
 			width: 70%;
 		}
