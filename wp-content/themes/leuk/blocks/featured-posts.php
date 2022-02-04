@@ -12,12 +12,13 @@ $featuredposts = get_field( 'select_posts' );
 	<?php } ?>
 
 	<?php if( $featuredposts ): ?>
+	<div class="swiper-wrapper">
 		<?php foreach( $featuredposts as $featuredpost ):
 			$title = get_the_title($featuredpost);
 			$fname = get_the_author_meta('first_name');
 			$lname = get_the_author_meta('last_name');
 		?>
-		<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" class="posts-item" title="Article: <?php the_title($featuredpost); ?>">
+		<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" class="posts-item swiper-slide" title="Article: <?php the_title($featuredpost); ?>">
 			<div class="posts-item--image">
 				<?php echo get_the_post_thumbnail($featuredpost); ?>
 			</div>
@@ -31,5 +32,7 @@ $featuredposts = get_field( 'select_posts' );
 
 
 		<?php endforeach; ?>
+	</div>
 	<?php endif; ?>
+	<div class="swiper-button swiper-button-next"></div>
 </section>

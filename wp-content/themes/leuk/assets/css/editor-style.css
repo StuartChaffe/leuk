@@ -1391,12 +1391,16 @@ body.nav-open {
 }
 
 .posts {
+  position: relative;
   background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: var(--spacing-xl);
   padding-bottom: var(--spacing);
+  padding-left: calc(var(--spacing-l) - 1px);
+  padding-right: calc(var(--spacing-l) - 1px);
+  overflow: hidden;
 }
 .posts--title {
   width: 100%;
@@ -1414,7 +1418,7 @@ body.nav-open {
 @media (min-width: 50em) {
   .posts-item {
     margin: var(--spacing-l);
-    width: calc(100% / 3 - (var(--spacing-l) * 2));
+    width: calc(100% / 3 - (var(--spacing-l) * 2)) !important;
   }
 }
 .posts-item:hover {
@@ -1453,6 +1457,21 @@ body.nav-open {
   opacity: 0;
   transform: translateY(var(--spacing-s));
   transition: all 0.2s ease-in-out;
+}
+.posts .swiper-wrapper {
+  width: 100%;
+}
+.posts .swiper-wrapper .posts-item {
+  margin: var(--spacing-l);
+  display: flex;
+  flex-direction: column;
+}
+.posts .swiper-button-next, .posts .swiper-rtl .swiper-button-prev {
+  right: var(--spacing-l);
+  left: auto;
+}
+.posts .swiper-button-next:after, .posts .swiper-rtl .swiper-button-prev:after {
+  content: url("../../src/icons/carousel-next-dark.svg");
 }
 
 .social-links {

@@ -24,3 +24,16 @@ jQuery(document).ready(function($) {
 		$(this).closest('.carousel').scrollView();
 	})
 });
+
+var swiper = new Swiper(".posts", {
+	slidesPerView: 3,
+	// spaceBetween: 181,
+	loop: true,
+	keyboard: {
+	  enabled: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+  });
