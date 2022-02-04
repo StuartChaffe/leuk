@@ -4,12 +4,12 @@
   --display-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-size: calc(0.9rem + 0.15vw);
   --font-size-lead: calc(1.2rem + 0.1vw);
-  --font-size-small: calc(0.9rem + 0.1vw);
+  --font-size-small: calc(0.8rem + 0.1vw);
   --font-size-h1: calc(2.8rem + 0.2vw);
   --font-size-h2: calc(1.4rem + 0.2vw);
   --font-size-h3: calc(1.2rem + 0.2vw);
-  --font-size-h4: calc(1.3rem + 0.2vw);
-  --font-size-h5: calc(1.2rem + 0.2vw);
+  --font-size-h4: calc(1rem + 0.2vw);
+  --font-size-h5: calc(1rem + 0.2vw);
   --font-weight-light: 100;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -52,7 +52,7 @@
     --font-size-h1: calc(3.2rem + 0.2vw);
     --font-size-h2: calc(1.6rem + 0.2vw);
     --font-size-h3: calc(1.3rem + 0.2vw);
-    --font-size-h4: calc(1.4rem + 0.2vw);
+    --font-size-h4: calc(1rem + 0.2vw);
     --font-size-h5: calc(1.2rem + 0.2vw);
   }
 }
@@ -399,14 +399,14 @@ input[type=button]:focus {
   min-height: 100%;
 }
 
-.container, .swiper--content, .banner--content, .global-footer__inner, .main {
+.container, .swiper--content, .posts, .banner--content, .global-footer__inner, .main {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-width);
 }
 @media (min-width: 50em) {
-  .container, .swiper--content, .banner--content, .global-footer__inner, .main {
+  .container, .swiper--content, .posts, .banner--content, .global-footer__inner, .main {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -1322,19 +1322,57 @@ body.nav-open {
   flex-wrap: wrap;
 }
 .posts-item {
-  background-color: var(--color-grey-light);
+  position: relative;
+  background-color: var(--color-grey);
+  color: var(--color-text-base);
   text-align: left;
   text-decoration: none;
   flex-grow: 0;
-  margin: var(--spacing-s);
-  width: calc(100% / 3 - 30px);
+  margin: var(--spacing-s) 0;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .posts-item {
+    margin: var(--spacing-l);
+    width: calc(100% / 3 - (var(--spacing-l) * 2));
+  }
+}
+.posts-item:hover {
+  text-decoration: none;
+  color: var(--color-text-base);
+}
+.posts-item:hover .icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+.posts-item:hover img {
+  filter: contrast(1.2);
 }
 .posts-item--image {
-  margin-bottom: 1rem;
   position: relative;
 }
 .posts-item--image img {
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.posts-item--meta {
+  display: flex;
+}
+.posts-item--meta p {
+  font-size: var(--font-size-small);
+}
+.posts-item--content {
+  padding: var(--spacing) var(--spacing) var(--spacing-l) var(--spacing);
+}
+.posts-item .icon {
+  position: absolute;
+  right: var(--spacing-s);
+  bottom: var(--spacing-s);
+  width: 12px;
+  height: 24px;
+  opacity: 0;
+  transform: translateY(var(--spacing-s));
+  transition: all 0.2s ease-in-out;
 }
 
 :root {

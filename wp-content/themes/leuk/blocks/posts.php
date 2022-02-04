@@ -12,6 +12,9 @@
 		'orderby' => 'date',
 		'order' => 'DESC',
 	));
+	$fname = get_the_author_meta('first_name');
+	$lname = get_the_author_meta('last_name');
+	// $full_name = $fname + $lname;
 ?>
 
 <?php if ($posts->have_posts()) : ?>
@@ -21,10 +24,12 @@
 		<div class="posts-item--image">
 			<?php echo get_the_post_thumbnail(); ?>
 		</div>
-		<div class="posts-item--meta"><p><strong><?php the_author(); ?></strong></p> / <p><?php echo get_the_date('d.m.y'); ?></p></div>
 		<div class="posts-item--content">
-			<p><?php the_title(); ?></p>
+			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;/&nbsp;<p><?php echo $fname; ?> <?php echo $lname; ?></p></div>
+			<h4><strong><?php the_title(); ?></strong></h4>
 		</div>
+
+		<svg class="icon"><use xlink:href="#post-arrow"></use></svg>
 	</a>
 <?php endwhile; wp_reset_query(); ?>
 </section>
