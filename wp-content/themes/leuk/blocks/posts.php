@@ -25,7 +25,7 @@
 			<?php echo get_the_post_thumbnail(); ?>
 		</div>
 		<div class="posts-item--content">
-			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;/&nbsp;<p><?php echo $fname; ?> <?php echo $lname; ?></p></div>
+			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p><?php echo $fname; ?> <?php echo $lname; ?></p></div>
 			<h4><strong><?php the_title(); ?></strong></h4>
 		</div>
 

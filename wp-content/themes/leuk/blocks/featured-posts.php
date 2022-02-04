@@ -6,9 +6,7 @@ $title = get_field('featured_posts_title');
 $featuredposts = get_field( 'select_posts' );
 ?>
 
-<div class="container">
-	<section class="posts">
-
+<section class="posts">
 	<?php if ( $title ) { ?>
 		<div class="posts--title fade"><?php echo $title; ?></div>
 	<?php } ?>
@@ -16,24 +14,22 @@ $featuredposts = get_field( 'select_posts' );
 	<?php if( $featuredposts ): ?>
 		<?php foreach( $featuredposts as $featuredpost ):
 			$title = get_the_title($featuredpost);
-			$desc = get_field( 'event_desc', $featuredpost);
-			// $image = get_field( 'event_image', $featuredpost);
-			$image = get_field('square_image', $featuredpost);
+			$fname = get_the_author_meta('first_name');
+			$lname = get_the_author_meta('last_name');
 		?>
-		<div class="posts-item fade">
-			<div class="posts-item--content">
-				<div class="posts-item--meta"><p> / &nbsp;<p><?php echo get_the_date('d.m.y'); ?></p></div>
-				<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" title="Article: <?php the_title(); ?>">
-					<h4><?php echo $title; ?></h4>
-				</a>
-				<?php if (has_excerpt($featuredpost) ) { ?><p class="small excerpt"><?php echo get_the_excerpt($featuredpost); ?></p><?php } ?>
-				<a class="posts-item--content-link" href="<?php esc_url( the_permalink($featuredpost) ); ?>" title="Article: <?php the_title($featuredpost); ?>">
-					Read more <?php echo get_icon('arrow'); ?>
-				</a>
+		<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" class="posts-item" title="Article: <?php the_title($featuredpost); ?>">
+			<div class="posts-item--image">
+				<?php echo get_the_post_thumbnail($featuredpost); ?>
 			</div>
-		</div>
+			<div class="posts-item--content">
+				<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p><?php echo $fname; ?> <?php echo $lname; ?></p></div>
+				<h4><strong><?php echo $title; ?></strong></h4>
+			</div>
+
+			<svg class="icon"><use xlink:href="#post-arrow"></use></svg>
+		</a>
+
 
 		<?php endforeach; ?>
 	<?php endif; ?>
-	</section>
-</div>
+</section>
