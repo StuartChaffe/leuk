@@ -17,16 +17,6 @@ function leuk_block_categories( $categories, $post )
 add_action('acf/init', 'leuk_acf_blocks');
 function leuk_acf_blocks() {
 	if( function_exists('acf_register_block') ) {
-		// acf_register_block(array(
-		// 	'name'				=> 'accordion',
-		// 	'title'				=> __('Accordion'),
-		// 	'description'		=> __('Add expanding content'),
-		// 	'render_callback'	=> 'leuk_acf_block_render_callback',
-		// 	'category'			=> 'leuk-blocks',
-		// 	'icon'				=> 'insert',
-		// 	'align' 			=> 'wide',
-		// 	'keywords'			=> array( 'accordion, expanding' ),
-		// ));
 		acf_register_block(array(
 			'name'				=> 'banner',
 			'title'				=> __('Banner'),
@@ -104,17 +94,17 @@ function leuk_acf_blocks() {
 			'mode' 				=> 'preview',
 			'keywords'			=> array( 'posts, blogs' ),
 		));
-		// acf_register_block(array(
-		// 	'name'				=> 'testimonial',
-		// 	'title'				=> __('Testimonial'),
-		// 	'description'		=> __('Add testimonial'),
-		// 	'render_callback'	=> 'leuk_acf_block_render_callback',
-		// 	'category'			=> 'leuk-blocks',
-		// 	'icon'				=> 'format-status',
-		// 	'align' 			=> 'wide',
-		// 	'mode' 				=> 'edit',
-		// 	'keywords'			=> array( 'testimonial, quote' ),
-		// ));
+		acf_register_block(array(
+			'name'				=> 'scrolling-content',
+			'title'				=> __('Scrolling content'),
+			'description'		=> __('Add content over background image'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'align-wide',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'content, scrolling' ),
+		));
 	}
 }
 
@@ -138,6 +128,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/cta',
 		'acf/featured-posts',
 		'acf/posts',
+		'acf/scrolling-content',
 		// 'acf/testimonial',
 	);
 

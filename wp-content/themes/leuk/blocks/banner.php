@@ -11,7 +11,7 @@ $button = get_field('banner_button');
 	<?php if ( $content ) { ?>
 		<div class="banner--content">
 			<div class="banner--text">
-		    	<?php echo $content ?>
+				<?php echo $content ?>
 			</div>
 
 			<div class="banner--button">

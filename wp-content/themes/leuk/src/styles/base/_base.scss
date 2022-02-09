@@ -47,6 +47,9 @@ body {
 	background-color: var(--body-background-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

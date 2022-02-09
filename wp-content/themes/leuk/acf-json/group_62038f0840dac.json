@@ -28,9 +28,34 @@
             "placeholder": ""
         },
         {
-            "key": "field_620390995bdf1",
+            "key": "field_62039fb9deefb",
             "label": "Background image",
             "name": "background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_6203a22019fd1",
+            "label": "Background image (mobile)",
+            "name": "background_image_mobile",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -71,5 +96,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644400814
+    "modified": 1644405297
 }

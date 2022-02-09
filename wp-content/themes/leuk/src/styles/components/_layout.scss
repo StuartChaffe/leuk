@@ -25,3 +25,32 @@
 	margin-bottom: var(--spacing-l);
 	flex: 1;
 }
+
+body {
+	@include mq($until: medium) {
+		background-image: none !important;
+	}
+
+	.bkg--image {
+		position: fixed;
+		z-index: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		max-width: none;
+		// width: 100%;
+		min-width: calc(100% + 2px);
+		min-height: calc(100% + 2px);
+		display: block;
+		@include mq(medium) {
+			display: none;
+		}
+	}
+}
+
+.bkg-black {
+	color: white;
+	h1, h2, h3, h4, h5, h6, p {
+		color: white;
+	}
+}

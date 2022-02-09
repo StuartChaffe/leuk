@@ -4,6 +4,7 @@
 	padding: var(--spacing-l) 0;
 	color: white;
 	text-align: center;
+	z-index: 1;
 	@include mq(medium) {
 		padding: var(--spacing-xl) 0;
 	}

@@ -13,7 +13,16 @@
 </style>
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<?php
+/**
+* The template used for displaying an accordion.
+*/
+$bkg = get_field( 'background_image');
+$bkgmobile = get_field( 'background_image_mobile');
+?>
+
+<body <?php body_class(); ?> <?php if ( $bkg ) { ?>style="background-image: url('<?php echo $bkg['url']; ?>')"<?php } ?>>
+<?php if ( $bkgmobile ) { ?><img loading="lazy" class="bkg--image hidedesktop" src="<?php echo $bkgmobile['url']; ?>" alt="<?php echo $bkgmobile['alt']; ?>" /><?php } ?>
 <div id="svg-sprite" style="height: 0; width: 0; position: absolute; visibility: hidden">
 <?php include get_theme_file_path('assets/svg/sprite.php'); ?>
 </div>
