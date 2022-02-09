@@ -28,7 +28,8 @@ jQuery(document).ready(function($) {
 var swiper = new Swiper(".posts", {
 	slidesPerView: 3,
 	// spaceBetween: 181,
-	loop: true,
+	watchOverflow: true,
+	// loop: true,
 	keyboard: {
 	  enabled: true,
 	},

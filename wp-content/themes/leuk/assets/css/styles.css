@@ -1667,6 +1667,10 @@ body.nav-open {
   pointer-events: auto;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 .u-bold {
   font-weight: bold !important;
 }

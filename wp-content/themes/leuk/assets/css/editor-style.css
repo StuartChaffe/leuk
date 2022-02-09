@@ -1771,6 +1771,10 @@ body.nav-open {
   pointer-events: auto;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
   pointer-events: none !important;
