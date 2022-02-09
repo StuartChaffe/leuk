@@ -13,7 +13,6 @@ $featuredposts = get_field( 'select_posts' );
 <?php } ?>
 
 <section class="posts">
-
 	<?php if( $featuredposts ): ?>
 	<div class="swiper-wrapper">
 		<?php foreach( $featuredposts as $featuredpost ):
