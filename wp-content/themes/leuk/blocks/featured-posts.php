@@ -18,15 +18,14 @@ $featuredposts = get_field( 'select_posts' );
 	<div class="swiper-wrapper">
 		<?php foreach( $featuredposts as $featuredpost ):
 			$title = get_the_title($featuredpost);
-			$fname = get_the_author_meta('first_name');
-			$lname = get_the_author_meta('last_name');
+			$name  = get_the_author_meta('display_name' );
 		?>
 		<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" class="posts-item swiper-slide" title="Article: <?php the_title($featuredpost); ?>">
 			<div class="posts-item--image">
 				<?php echo get_the_post_thumbnail($featuredpost); ?>
 			</div>
 			<div class="posts-item--content">
-				<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p><?php echo $fname; ?> <?php echo $lname; ?></p></div>
+				<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p><?php echo $name; ?></p></div>
 				<h4><strong><?php echo $title; ?></strong></h4>
 			</div>
 
