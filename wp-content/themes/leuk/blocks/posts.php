@@ -14,7 +14,7 @@
 	));
 	// $fname = get_the_author_meta('first_name');
 	// $lname = get_the_author_meta('last_name');
-	$author_id = get_post_field ('post_author');
+	$author_id = get_post_field ('post_author', $posts);
 	$name = get_the_author_meta( 'display_name' , $author_id );
 	// $full_name = $fname + $lname;
 ?>
@@ -27,7 +27,7 @@
 			<?php echo get_the_post_thumbnail(); ?>
 		</div>
 		<div class="posts-item--content">
-			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p><?php echo $name; ?></p></div>
+			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p>s<?php echo $name; ?></p></div>
 			<h4><strong><?php the_title(); ?></strong></h4>
 		</div>
 
