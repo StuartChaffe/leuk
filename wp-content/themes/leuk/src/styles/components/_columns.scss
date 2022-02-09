@@ -1,0 +1,19 @@
+.columns {
+	&--inner {
+		@extend .container;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: var(--spacing-xl);
+		padding-bottom: var(--spacing-xl);
+		@include mq(medium) {
+			flex-direction: row;
+		}
+	}
+	&-item {
+		display: flex;
+		flex-direction: column;
+		width: calc(100% / 3);
+		padding: 0 var(--spacing-l);
+	}
+}

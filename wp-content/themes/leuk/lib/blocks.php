@@ -40,6 +40,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'carousel, image slider, swiper' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'change-content',
+			'title'				=> __('Content changer'),
+			'description'		=> __('Add a block that changes content on hover'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'align-pull-right',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'content, changing' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'content',
 			'title'				=> __('Content'),
 			'description'		=> __('Add a content block'),
@@ -51,15 +62,15 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'content' ),
 		));
 		acf_register_block(array(
-			'name'				=> 'change-content',
-			'title'				=> __('Content changer'),
-			'description'		=> __('Add a block that changes content on hover'),
+			'name'				=> 'columns',
+			'title'				=> __('Columns'),
+			'description'		=> __('Add columns content'),
 			'render_callback'	=> 'leuk_acf_block_render_callback',
 			'category'			=> 'leuk-blocks',
-			'icon'				=> 'align-pull-right',
+			'icon'				=> 'columns',
 			'align' 			=> 'wide',
 			'mode' 				=> 'preview',
-			'keywords'			=> array( 'content, changing' ),
+			'keywords'			=> array( 'columns, content' ),
 		));
 		acf_register_block(array(
 			'name'				=> 'cta',
@@ -123,8 +134,9 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 	return array(
 		'acf/banner',
 		'acf/carousel',
-		'acf/content',
 		'acf/change-content',
+		'acf/columns',
+		'acf/content',
 		'acf/cta',
 		'acf/featured-posts',
 		'acf/posts',
