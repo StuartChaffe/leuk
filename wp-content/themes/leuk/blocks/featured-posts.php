@@ -19,6 +19,8 @@ $featuredposts = get_field( 'select_posts' );
 		<?php foreach( $featuredposts as $featuredpost ):
 			$title = get_the_title($featuredpost);
 			$name  = get_the_author_meta('display_name', get_the_author_meta('ID'));
+			$author_id = get_post_field ('post_author', $featuredpost);
+			$name = get_the_author_meta( 'display_name' , $author_id );
 		?>
 		<a href="<?php esc_url( the_permalink($featuredpost) ); ?>" class="posts-item swiper-slide" title="Article: <?php the_title($featuredpost); ?>">
 			<div class="posts-item--image">
@@ -31,8 +33,6 @@ $featuredposts = get_field( 'select_posts' );
 
 			<svg class="icon"><use xlink:href="#post-arrow"></use></svg>
 		</a>
-
-
 		<?php endforeach; ?>
 	</div>
 	<?php endif; ?>
