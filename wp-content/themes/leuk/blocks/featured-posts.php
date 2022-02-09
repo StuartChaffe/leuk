@@ -5,11 +5,13 @@
 $title = get_field('featured_posts_title');
 $featuredposts = get_field( 'select_posts' );
 ?>
+<?php if ( $title ) { ?>
+	<div class="container">
+		<div class="posts--title fade"><?php echo $title; ?></div>
+	</div>
+<?php } ?>
 
 <section class="posts">
-	<?php if ( $title ) { ?>
-		<div class="posts--title fade"><?php echo $title; ?></div>
-	<?php } ?>
 
 	<?php if( $featuredposts ): ?>
 	<div class="swiper-wrapper">

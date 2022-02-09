@@ -4,14 +4,15 @@
 	background-color: white;
 	display: flex;
 	flex-direction: row;
-    flex-wrap: wrap;
-	padding-top: var(--spacing-xl);
+	flex-wrap: wrap;
+	// padding-top: var(--spacing-xl);
 	padding-bottom: var(--spacing);
 	padding-left: calc(var(--spacing-l) - 1px);
 	padding-right: calc(var(--spacing-l) - 1px);
 	overflow: hidden;
 	&--title {
 		width: 100%;
+		padding-top: var(--spacing-xl);
 	}
 	&-item {
 		position: relative;
