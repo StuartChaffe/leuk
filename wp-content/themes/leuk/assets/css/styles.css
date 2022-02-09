@@ -444,6 +444,10 @@ body .bkg--image {
   }
 }
 
+.bkg--white {
+  background-color: white;
+}
+
 .bkg-black {
   color: white;
 }
