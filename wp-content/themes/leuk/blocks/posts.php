@@ -27,6 +27,9 @@
 			<?php echo get_the_post_thumbnail(); ?>
 		</div>
 		<div class="posts-item--content">
+		<?php $author_id=$posts->post_author; ?>
+<?php the_author_meta( 'display_name' , $author_id ); ?>
+
 			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p>b<?php echo $name; ?></p></div>
 			<h4><strong><?php the_title(); ?></strong></h4>
 		</div>
