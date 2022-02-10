@@ -1243,12 +1243,14 @@ body.nav-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: var(--spacing-xl);
-  padding-bottom: var(--spacing-xl);
+  padding-top: var(--spacing-l);
+  padding-bottom: var(--spacing-l);
 }
 @media (min-width: 50em) {
   .columns--inner {
     flex-direction: row;
+    padding-top: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xxl);
   }
 }
 .columns-item {
