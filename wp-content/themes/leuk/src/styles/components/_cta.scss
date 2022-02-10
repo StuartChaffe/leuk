@@ -1,0 +1,16 @@
+.cta {
+	padding-top: var(--spacing-l) !important;
+	padding-bottom: var(--spacing-l) !important;
+	@include mq(medium) {
+		padding-top: var(--spacing-xxl) !important;
+		padding-bottom: var(--spacing-xxl) !important;
+	}
+	&--inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.btn {
+		margin-left: 1rem;
+	}
+}

@@ -19,7 +19,7 @@
                 "bkg--grey": "Grey",
                 "bkg--white": "White"
             },
-            "default_value": "Grey",
+            "default_value": "bkg--grey",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -111,5 +111,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644424963
+    "modified": 1644504983
 }

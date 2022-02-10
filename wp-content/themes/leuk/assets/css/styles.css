@@ -1405,6 +1405,25 @@ body.nav-open {
   }
 }
 
+.cta {
+  padding-top: var(--spacing-l) !important;
+  padding-bottom: var(--spacing-l) !important;
+}
+@media (min-width: 50em) {
+  .cta {
+    padding-top: var(--spacing-xxl) !important;
+    padding-bottom: var(--spacing-xxl) !important;
+  }
+}
+.cta--inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta .btn {
+  margin-left: 1rem;
+}
+
 .posts {
   position: relative;
   background-color: white;

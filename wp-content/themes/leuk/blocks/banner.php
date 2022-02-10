@@ -14,11 +14,11 @@ $button = get_field('banner_button');
 				<?php echo $content ?>
 			</div>
 
-			<div class="banner--button">
 			<?php if ($button) { ?>
+			<div class="banner--button">
 				<span class="btn btn--primary"><a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a></span>
-			<?php } ?>
 			</div>
+			<?php } ?>
 		</div>
 	<?php } ?>
 	<?php if ( $image['banner_image_large'] ) { ?><img loading="lazy" class="banner--image hidemobile" src="<?php echo $image['banner_image_large']['url']; ?>" alt="<?php echo $image['banner_image_large']['alt']; ?>" /><?php } ?>
