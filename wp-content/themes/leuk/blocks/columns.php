@@ -14,8 +14,10 @@ $bkg = get_field('bkg-colour');
 		$icon = get_sub_field('column_icon');
 	?>
 		<div class="columns-item">
-			<?php if ( $icon ) { ?><img loading="lazy" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" /><?php } ?>
-			<?php echo $content; ?>
+			<?php if ( $icon ) { ?><img class="columns-item--image" loading="lazy" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" /><?php } ?>
+			<div class="columns-item--content">
+				<?php echo $content; ?>
+			</div>
 		</div>
 	<?php endwhile; ?>
 	</div>

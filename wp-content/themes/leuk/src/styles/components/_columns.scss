@@ -12,8 +12,14 @@
 	}
 	&-item {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		width: calc(100% / 3);
-		padding: 0 var(--spacing-l);
+		padding: 0 var(--spacing);
+		&--image {
+			height: 50px;
+		}
+		&--content {
+			padding-left: var(--spacing-s);
+		}
 	}
 }

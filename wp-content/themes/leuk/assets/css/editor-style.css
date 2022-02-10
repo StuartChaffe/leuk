@@ -798,9 +798,15 @@ span.btn:hover {
 }
 .columns-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: calc(100% / 3);
-  padding: 0 var(--spacing-l);
+  padding: 0 var(--spacing);
+}
+.columns-item--image {
+  height: 50px;
+}
+.columns-item--content {
+  padding-left: var(--spacing-s);
 }
 
 .content > * {
