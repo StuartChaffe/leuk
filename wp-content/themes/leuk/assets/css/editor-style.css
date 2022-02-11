@@ -1433,14 +1433,14 @@ span.btn:hover {
   min-height: 100%;
 }
 
-.container, .swiper--content, .scrolling-content--content > div, .posts, .main, .banner--content, .columns--inner, .global-footer__inner {
+.container, .text-image--content, .swiper--content, .scrolling-content--content > div, .posts, .main, .banner--content, .columns--inner, .global-footer__inner {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-width);
 }
 @media (min-width: 50em) {
-  .container, .swiper--content, .scrolling-content--content > div, .posts, .main, .banner--content, .columns--inner, .global-footer__inner {
+  .container, .text-image--content, .swiper--content, .scrolling-content--content > div, .posts, .main, .banner--content, .columns--inner, .global-footer__inner {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -1849,6 +1849,75 @@ body.nav-open {
 
 .swiper-button-disabled {
   display: none;
+}
+
+.text-image {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 550px;
+}
+@media (min-width: 50em) {
+  .text-image {
+    flex-direction: row;
+  }
+}
+.text-image--content-inner {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+@media (min-width: 50em) {
+  .text-image--content-inner {
+    width: 50%;
+    padding: var(--spacing-l) var(--spacing) var(--spacing-l) 0;
+  }
+}
+.text-image--image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 50em) {
+  .text-image--image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+}
+.text-image--image img {
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .text-image--image img {
+    display: none;
+    visibility: hidden;
+    height: 100%;
+    max-width: none;
+    margin-left: auto;
+  }
+}
+.text-image__square {
+  min-height: 50vw;
+}
+
+.image--left .text-image--image {
+  margin-left: 0;
+  margin-right: 50%;
+}
+.image--left .text-image--content-inner {
+  margin-left: auto;
+}
+@media (min-width: 50em) {
+  .image--left .text-image--content-inner {
+    padding: var(--spacing-l) 0 var(--spacing) var(--spacing-l);
+  }
 }
 
 /* Stop links being clickable in the block editor */

@@ -116,6 +116,17 @@ function leuk_acf_blocks() {
 			'mode' 				=> 'preview',
 			'keywords'			=> array( 'content, scrolling' ),
 		));
+		acf_register_block(array(
+			'name'				=> 'text-image',
+			'title'				=> __('Text with image'),
+			'description'		=> __('Add a standard text with image block'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'align-pull-right',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'content, text, image' ),
+		));
 	}
 }
 
@@ -141,6 +152,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-posts',
 		'acf/posts',
 		'acf/scrolling-content',
+		'acf/text-image',
 		// 'acf/testimonial',
 	);
 
