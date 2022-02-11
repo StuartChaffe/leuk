@@ -48,6 +48,7 @@
 	&--content {
 		padding-top: var(--spacing);
 		@include mq(medium) {
+			padding-top: 0;
 			padding-bottom: 0;
 			padding-left: var(--spacing-xl);
 		}

@@ -1010,6 +1010,7 @@ span.btn:hover {
 }
 @media (min-width: 50em) {
   .global-footer--content {
+    padding-top: 0;
     padding-bottom: 0;
     padding-left: var(--spacing-xl);
   }
