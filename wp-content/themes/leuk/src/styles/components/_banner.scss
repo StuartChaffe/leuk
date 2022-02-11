@@ -21,6 +21,9 @@
 		padding-bottom: var(--spacing-xl);
 		// padding: var(--spacing-xxl);
 	}
+	&__small {
+		height: 50vh;
+	}
 	&--image {
 		position: absolute;
 		z-index: 1;

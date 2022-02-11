@@ -5,9 +5,10 @@
 $image = get_field('banner_image');
 $content = get_field('banner_content');
 $button = get_field('banner_button');
+$size = get_field('banner_size');
 ?>
 
-<section class="banner" <?php if ( $image['banner_image_large'] ) { ?>style="background-image: url('<?php echo $image['banner_image_large']['url']; ?>')"<?php } ?>>
+<section class="banner<?php if ( $size = 'banner__small' ) { ?> banner__small<?php } ?>" <?php if ( $image['banner_image_large'] ) { ?>style="background-image: url('<?php echo $image['banner_image_large']['url']; ?>')"<?php } ?>>
 	<?php if ( $content ) { ?>
 		<div class="banner--content">
 			<div class="banner--text">

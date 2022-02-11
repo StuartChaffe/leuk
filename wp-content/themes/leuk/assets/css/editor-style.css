@@ -539,6 +539,9 @@ pre {
     padding-bottom: var(--spacing-xl);
   }
 }
+.banner__small {
+  height: 50vh;
+}
 .banner--image {
   position: absolute;
   z-index: 1;
