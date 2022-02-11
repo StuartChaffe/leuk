@@ -1419,9 +1419,22 @@ body.nav-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .cta--inner {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 .cta .btn {
   margin-left: 1rem;
+}
+@media (max-width: 49.99em) {
+  .cta .btn {
+    margin-top: 2rem;
+  }
 }
 
 .posts {

@@ -9,8 +9,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		@include mq(medium) {
+			flex-direction: row;
+			text-align: left;
+		}
 	}
 	.btn {
 		margin-left: 1rem;
+		@include mq($until: medium) {
+			margin-top: 2rem;
+		}
 	}
 }
