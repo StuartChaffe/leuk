@@ -1920,6 +1920,9 @@ body.nav-open {
   align-items: flex-start;
   margin-bottom: 2rem;
 }
+.text-image-list:last-of-type {
+  margin-bottom: 0;
+}
 .text-image-list--image {
   height: 45px;
   width: 120px;

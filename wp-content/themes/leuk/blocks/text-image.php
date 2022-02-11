@@ -13,7 +13,7 @@ $image = get_field('image');
 		<div class="text-image--content-inner">
 			<?php echo $content ?>
 
-			<?php if( have_rows('list') ) { ?>
+		<?php if( have_rows('list') ) { ?>
 			<?php while( have_rows('list') ): the_row();
 				$icon = get_sub_field('list_image');
 				$content = get_sub_field('list_content');
