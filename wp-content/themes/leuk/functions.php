@@ -60,7 +60,7 @@ function my_login_logo() { ?>
 			font-size: 16px !important;
 		}
 		.login form {
-			padding: 0px !important; 
+			padding: 0px !important;
 			background: transparent !important;
 			border: 0 !important;
 			box-shadow: none !important;
