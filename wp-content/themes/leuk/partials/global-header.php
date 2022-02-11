@@ -24,7 +24,7 @@ $logo = get_field( 'logo');
 		</nav>
 
 		<div class="global-header--nav-contact">
-			<a href="">Contact Us</a>
+			<a href="/contact-us">Contact Us</a>
 		</div>
 
 
