@@ -34,6 +34,7 @@ $image = get_field('image');
 			<?php } ?>
 		</div>
 	</div>
+	<?php if ($image['text-image-text']) { ?><div class="text-image--image-text"><h4><?php echo $image['text-image-text']; ?></h4></div><?php } ?>
 	<div class="text-image--image" style="background-image: url('<?php echo $image['text-image-image']['url']; ?>')">
 		<img class="<?php if ( $image['text-image-mobile-image'] ) { ?>hidemobile<?php } ?>" loading="lazy" src="<?php echo $image['text-image-image']['url']; ?>" alt="<?php echo $image['text-image-image']['alt']; ?>" />
 		<?php if ( $image['text-image-mobile-image'] ) { ?><img class="hidedesktop" loading="lazy" src="<?php echo $image['text-image-mobile-image']['url']; ?>" alt="<?php echo $image['text-image-mobile-image']['alt']; ?>" /><?php } ?>

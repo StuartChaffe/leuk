@@ -116,6 +116,25 @@
                     "return_format": "value",
                     "ajax": 0,
                     "placeholder": ""
+                },
+                {
+                    "key": "field_620678f8f91f6",
+                    "label": "Text over image",
+                    "name": "text-image-text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -278,5 +297,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644589678
+    "modified": 1644591382
 }
