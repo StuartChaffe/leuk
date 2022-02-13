@@ -1631,10 +1631,16 @@ body.nav-open {
   flex-direction: column;
 }
 .scrolling-content .location {
-  margin-top: 15%;
+  margin-top: 30%;
   position: absolute;
   z-index: 0;
-  color: white;
+  color: var(--color-text-base);
+}
+@media (min-width: 50em) {
+  .scrolling-content .location {
+    margin-top: 15%;
+    color: white;
+  }
 }
 .scrolling-content .location span {
   color: var(--color-primary);
