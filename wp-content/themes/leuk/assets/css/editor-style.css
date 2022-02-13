@@ -1020,6 +1020,13 @@ span.btn:hover {
     padding-left: var(--spacing-xl);
   }
 }
+.global-footer--content ul {
+  color: var(--color-grey-mid);
+  font-size: var(--font-size-small);
+}
+.global-footer--content ul li:first-child {
+  margin-bottom: 0.5rem;
+}
 .global-footer--content ul p {
   color: var(--color-grey-mid);
   margin-bottom: 0.5rem;
