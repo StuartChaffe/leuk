@@ -7,6 +7,7 @@ $background = get_field('background');
 ?>
 
 <section class="scrolling-content">
+	<?php if ($content['content_location']) { ?><p class="location"><span>//</span> <?php echo $content['content_location'] ?></p><?php } ?>
 	<div class="scrolling-content--content <?php echo $background['background_colour'] ?>" style="background-color:<?php if ( $background['background_colour']  == 'bkg-black' ) { ?> rgba(0,0,0,0.<?php echo $background['background_transparency'] ?>)<?php } elseif ( $background['background_colour']  == 'bkg-white' ) { ?>rgba(255,255,255,0.<?php echo $background['background_transparency'] ?>);<?php } ?>">
 		<div>
 			<div class="scrolling-content--text">
