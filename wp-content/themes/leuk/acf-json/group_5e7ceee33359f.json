@@ -119,8 +119,8 @@
             "default_value": ""
         },
         {
-            "key": "field_607b050b81cae",
-            "label": "Global alert",
+            "key": "field_6208ef9805aae",
+            "label": "Footer",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -135,10 +135,10 @@
             "endpoint": 0
         },
         {
-            "key": "field_5e7cef9143a37",
-            "label": "Show global alert?",
-            "name": "alert",
-            "type": "true_false",
+            "key": "field_6208efc405aaf",
+            "label": "Company details",
+            "name": "footer_company",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -147,90 +147,20 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_5e7ceeea145d2",
-            "label": "Global alert text",
-            "name": "alert_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5e7cef9143a37",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
             "default_value": "",
             "tabs": "all",
-            "toolbar": "basic",
+            "toolbar": "full",
             "media_upload": 0,
             "delay": 0
         },
         {
-            "key": "field_607b051881caf",
-            "label": "Cookie alert",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_607b07d081cb2",
-            "label": "Show cookie alert?",
-            "name": "cookie",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
-            "key": "field_607b07cf81cb1",
-            "label": "Cookie alert text",
-            "name": "cookie_text",
+            "key": "field_6208f1ccc1bb9",
+            "label": "Menu",
+            "name": "footer_menu",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_607b07d081cb2",
-                        "operator": "==",
-                        "value": "1"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -238,7 +168,7 @@
             },
             "default_value": "",
             "tabs": "all",
-            "toolbar": "basic",
+            "toolbar": "full",
             "media_upload": 0,
             "delay": 0
         }
@@ -261,5 +191,5 @@
     "active": true,
     "description": "Set theme options",
     "show_in_rest": 0,
-    "modified": 1643040678
+    "modified": 1644753376
 }

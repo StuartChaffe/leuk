@@ -1,34 +1,21 @@
+<?php
+/**
+* The template used for displaying an accordion.
+*/
+$company = get_field( 'footer_company', 'options');
+$logoprimary = get_field( 'logo_primary_white', 'options');
+$menu = get_field( 'footer_menu', 'options');
+?>
+
 <footer class="global-footer">
 	<div class="global-footer__inner">
 		<div class="global-footer--company">
 			<img src="/wp-content/uploads/Leuk-TDC-white.svg" alt="" width="250">
-			<p>Leuk Teleport & Data Centre GA<br />
-				Satellitenbodenstation Leuk Brentjong 2<br />
-				CH-3953 Leuk-Stadt<br />
-				Switzerland</p>
-			<br />
-			<p><a href="tel:+410274749111">+41 (0) 27 4749111</a><br />
-			<a href="mailto:info@leuk.com">info@leuk.com</a></p>
+			<?php echo $company; ?>
 		</div>
 
 		<div class="global-footer--content">
-			<ul>
-				<li><p>Services</p></li>
-				<li><a href="">Satellite Solutions</a></li>
-				<li><a href="">Data Centre</a></li>
-			</ul>
-
-			<ul>
-				<li><p>Resources</p></li>
-				<li><a href="">Blog</a></li>
-				<li><a href="">Contact Us</a></li>
-			</ul>
-
-			<ul>
-				<li><p>Facilities</p></li>
-				<li><a href="">Leuk</a></li>
-			</ul>
-
+			<?php echo $menu; ?>
 		</div>
 
 		<ul class="social-links">
