@@ -1540,7 +1540,7 @@ body.nav-open {
   flex-direction: column;
 }
 .scrolling-content .location {
-  margin-top: 10%;
+  margin-top: 15%;
   position: absolute;
   z-index: 0;
   color: white;
