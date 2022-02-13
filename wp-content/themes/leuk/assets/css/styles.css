@@ -498,6 +498,7 @@ body .bkg--image {
 .content img {
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
+  width: 100%;
 }
 .content .wp-caption-text {
   margin-top: -3rem;
