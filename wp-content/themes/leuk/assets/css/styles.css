@@ -460,6 +460,10 @@ body .bkg--image {
   color: white;
 }
 
+.content {
+  padding-top: var(--spacing-xxl);
+  padding-bottom: var(--spacing-xxl);
+}
 .content > * {
   max-width: var(--content-width);
   margin-right: auto;
@@ -478,11 +482,27 @@ body .bkg--image {
   color: var(--link-hover-color);
   text-decoration: underline;
 }
+.content p {
+  margin-bottom: 1.5rem;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
 .content blockquote {
   max-width: none;
   font-size: var(--font-size-h3);
   line-height: 1.4;
   margin: var(--spacing-l) 0;
+}
+.content img {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+.content .wp-caption-text {
+  margin-top: -3rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
 }
 .content figure {
   max-width: none;
@@ -1378,7 +1398,7 @@ body.nav-open {
   }
 }
 
-.content {
+.change-content--content {
   height: 100%;
   background-color: var(--color-grey);
   grid-column: 2;
@@ -1392,17 +1412,17 @@ body.nav-open {
   padding-top: 0;
 }
 @media (min-width: 50em) {
-  .content {
+  .change-content--content {
     padding-top: var(--spacing-l);
   }
 }
 @media (min-width: 70em) {
-  .content {
+  .change-content--content {
     padding: var(--spacing-xxl);
     padding-top: var(--spacing-xxl);
   }
 }
-.content .btn {
+.change-content--content .btn {
   margin-top: 2rem;
 }
 

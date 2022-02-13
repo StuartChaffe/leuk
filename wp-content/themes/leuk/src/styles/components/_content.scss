@@ -1,4 +1,6 @@
 .content {
+	padding-top: var(--spacing-xxl);
+	padding-bottom: var(--spacing-xxl);
 	> * {
 		max-width: var(--content-width);
 		margin-right: auto;
@@ -18,6 +20,14 @@
 		color: var(--link-hover-color);
 		text-decoration: underline;
 	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
 
 	blockquote {
 		max-width: none;
@@ -26,6 +36,15 @@
 		margin: var(--spacing-l) 0;
 	}
 
+	img {
+		margin-top: var(--spacing-xl);
+		margin-bottom: var(--spacing-xl);
+	}
+	.wp-caption-text {
+		margin-top: -3rem;
+		text-align: center;
+		color: rgba(0,0,0,0.5);
+	}
 	figure {
 		max-width: none;
 		margin: var(--spacing-xl) 0;
