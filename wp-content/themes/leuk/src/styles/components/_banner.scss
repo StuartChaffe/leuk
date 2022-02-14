@@ -50,6 +50,12 @@
 			flex-direction: row;
 		}
 	}
+	&--form {
+		background-color: var(--color-grey);
+		padding: var(--spacing);
+		width: 350px;
+		margin-left: auto;
+	}
 	&--text {
 		width: 90%;
 		margin-top: auto;

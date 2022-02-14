@@ -5,6 +5,7 @@
 $image = get_field('banner_image');
 $content = get_field('banner_content');
 $button = get_field('banner_button');
+$form = get_field('banner_form');
 $size = get_field('banner_size');
 ?>
 
@@ -18,6 +19,12 @@ $size = get_field('banner_size');
 			<?php if ($button) { ?>
 			<div class="banner--button">
 				<span class="btn btn--primary"><a href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a></span>
+			</div>
+			<?php } ?>
+
+			<?php if ($form) { ?>
+			<div class="banner--form">
+				<?php echo $form ?>
 			</div>
 			<?php } ?>
 		</div>

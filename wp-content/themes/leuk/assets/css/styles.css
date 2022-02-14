@@ -1226,6 +1226,12 @@ body.nav-open {
     flex-direction: row;
   }
 }
+.banner--form {
+  background-color: var(--color-grey);
+  padding: var(--spacing);
+  width: 350px;
+  margin-left: auto;
+}
 .banner--text {
   width: 90%;
   margin-top: auto;
