@@ -17,7 +17,7 @@ $featuredposts = get_field( 'select_posts' );
 	<div class="swiper-wrapper">
 		<?php foreach( $featuredposts as $featuredpost ):
 			$title = get_the_title($featuredpost);
-			$name  = get_the_author_meta('display_name', get_the_author_meta('ID'));
+			// $name  = get_the_author_meta('display_name', get_the_author_meta('ID'));
 			$author_id = get_post_field ('post_author', $featuredpost);
 			$name = get_the_author_meta( 'display_name' , $author_id );
 		?>
