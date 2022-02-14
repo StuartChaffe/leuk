@@ -1273,6 +1273,21 @@ body.nav-open {
     width: 40%;
   }
 }
+.banner-post {
+  position: relative;
+  background-color: black;
+}
+.banner-post:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: black;
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
 
 .columns--inner {
   display: flex;

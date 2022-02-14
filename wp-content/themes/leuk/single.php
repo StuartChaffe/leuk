@@ -6,7 +6,7 @@
 	$name = get_the_author_meta( 'display_name' );
 ?>
 
-<section class="banner" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
+<section class="banner banner-post" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>')">
 	<div class="banner--content">
 		<div class="banner--text">
 			<h1 class="heading-2"><?php the_title(); ?></h1>
