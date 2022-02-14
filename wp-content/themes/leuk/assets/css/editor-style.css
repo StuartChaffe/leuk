@@ -852,6 +852,56 @@ span.btn:hover {
   }
 }
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  padding-top: var(--spacing-l) !important;
+  padding-bottom: var(--spacing-l) !important;
+}
+@media (min-width: 50em) {
+  .contact {
+    flex-direction: row;
+    text-align: left;
+    padding-top: calc(var(--spacing-xxl) + 100px) !important;
+    padding-bottom: var(--spacing-xxl) !important;
+  }
+}
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 var(--spacing-l);
+  color: white;
+}
+@media (min-width: 50em) {
+  .contact-item {
+    flex-direction: column;
+    width: calc(100% / 3);
+  }
+}
+.contact-item:first-child {
+  padding-left: 0;
+}
+.contact-item:last-child {
+  padding-right: 0;
+}
+.contact-item a, .contact-item h2, .contact-item h3, .contact-item h4, .contact-item h5, .contact-item h6, .contact-item p {
+  color: white;
+}
+.contact-item h2, .contact-item h3, .contact-item h4, .contact-item h5, .contact-item h6 {
+  margin-bottom: 2rem;
+}
+.contact-item p {
+  margin-bottom: 1.5rem;
+}
+.contact-form {
+  background-color: var(--color-grey);
+  padding: var(--spacing);
+  width: 350px;
+}
+
 .content {
   padding-top: var(--spacing-xxl);
   padding-bottom: var(--spacing-xxl);
@@ -1496,14 +1546,14 @@ span.btn:hover {
   min-height: 100%;
 }
 
-.container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .main, .banner--content, .columns--inner, .global-footer__inner {
+.container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .main, .banner--content, .columns--inner, .contact, .global-footer__inner {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-width);
 }
 @media (min-width: 50em) {
-  .container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .main, .banner--content, .columns--inner, .global-footer__inner {
+  .container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .main, .banner--content, .columns--inner, .contact, .global-footer__inner {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -2073,4 +2123,8 @@ body.nav-open {
 .wp-block {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+.contact {
+  background-color: var(--color-grey-mid);
 }
