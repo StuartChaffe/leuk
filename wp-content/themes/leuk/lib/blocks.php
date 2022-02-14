@@ -51,17 +51,6 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'content, changing' ),
 		));
 		acf_register_block(array(
-			'name'				=> 'content',
-			'title'				=> __('Content'),
-			'description'		=> __('Add a content block'),
-			'render_callback'	=> 'leuk_acf_block_render_callback',
-			'category'			=> 'leuk-blocks',
-			'icon'				=> 'format-aside',
-			'align' 			=> 'wide',
-			'mode' 				=> 'auto',
-			'keywords'			=> array( 'content' ),
-		));
-		acf_register_block(array(
 			'name'				=> 'columns',
 			'title'				=> __('Columns'),
 			'description'		=> __('Add columns content'),
@@ -71,6 +60,28 @@ function leuk_acf_blocks() {
 			'align' 			=> 'wide',
 			'mode' 				=> 'preview',
 			'keywords'			=> array( 'columns, content' ),
+		));
+		acf_register_block(array(
+			'name'				=> 'contact',
+			'title'				=> __('Contact'),
+			'description'		=> __('Add contact content'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'id',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'contact, content' ),
+		));
+		acf_register_block(array(
+			'name'				=> 'content',
+			'title'				=> __('Content'),
+			'description'		=> __('Add a content block'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'format-aside',
+			'align' 			=> 'wide',
+			'mode' 				=> 'auto',
+			'keywords'			=> array( 'content' ),
 		));
 		acf_register_block(array(
 			'name'				=> 'cta',
@@ -147,6 +158,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/carousel',
 		'acf/change-content',
 		'acf/columns',
+		'acf/contact',
 		'acf/content',
 		'acf/cta',
 		'acf/featured-posts',
