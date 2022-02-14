@@ -1247,6 +1247,7 @@ body.nav-open {
 @media (min-width: 50em) {
   .banner--text {
     width: 70%;
+    padding-right: 2rem;
   }
 }
 @media (min-width: 70em) {

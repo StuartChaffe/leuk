@@ -67,6 +67,7 @@
 		margin-top: auto;
 		@include mq(medium) {
 			width: 70%;
+			padding-right: 2rem;
 		}
 		@include mq(large) {
 			width: 60%;
