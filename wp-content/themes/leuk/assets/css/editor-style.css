@@ -562,6 +562,7 @@ pre {
 .banner--content {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   margin-top: auto;
   z-index: 2;
   width: 100%;
