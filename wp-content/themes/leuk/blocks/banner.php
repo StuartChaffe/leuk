@@ -5,7 +5,7 @@
 $image = get_field('banner_image');
 $content = get_field('banner_content');
 $button = get_field('banner_button');
-$form = get_field('banner_form');
+$form = get_field('banner_form', false, false);
 $size = get_field('banner_size');
 ?>
 

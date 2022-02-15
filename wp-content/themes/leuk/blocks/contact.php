@@ -4,7 +4,7 @@
 */
 $contentleft = get_field('contact_left');
 $contentright = get_field('contact_right');
-$form = get_field('contact_form');
+$form = get_field('contact_form', false, false);
 ?>
 
 <section class="contact">
