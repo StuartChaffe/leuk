@@ -3,6 +3,25 @@
     "title": "Columns",
     "fields": [
         {
+            "key": "field_620ccbce66690",
+            "label": "ID (for links)",
+            "name": "link_id",
+            "type": "text",
+            "instructions": "Add a name, no spaces or special characters.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6203eeaa77548",
             "label": "Background colour",
             "name": "bkg-colour",
@@ -111,5 +130,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644504983
+    "modified": 1645006308
 }

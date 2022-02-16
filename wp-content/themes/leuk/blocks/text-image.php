@@ -6,9 +6,10 @@ $content = get_field('text-image-content');
 $button = get_field('button');
 $bkg = get_field('bkg-colour');
 $image = get_field('image');
+$linkid = get_field('link_id');
 ?>
 
-<section class="text-image <?php echo $bkg ?> <?php echo $image['text-image-position'] ?>">
+<section class="text-image <?php echo $bkg ?> <?php echo $image['text-image-position'] ?>"<?php if ($linkid) { ?> id="<?php echo $linkid; ?>"<?php } ?>>
 	<div class="text-image--content">
 		<div class="text-image--content-inner">
 			<?php echo $content ?>
