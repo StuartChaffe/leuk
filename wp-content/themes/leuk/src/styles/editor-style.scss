@@ -8,7 +8,7 @@
 // Base
 @import "base/base";
 @import "base/typography";
-@import "base/forms";
+// @import "base/forms";
 @import "components/*";
 
 /* Stop links being clickable in the block editor */
@@ -27,4 +27,45 @@
 
 .contact {
 	background-color: var(--color-grey-mid);
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	// height: 38px;
+	width: 100%;
+	padding: 6px 10px;
+	margin-bottom: 1rem;
+	background-color: #fff;
+	border: 1px solid #9d9d9d;
+	border-radius: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+	width: 100%;
+	display: inline-block;
+	border-radius: 0px;
+	padding: 0;
+	border: 0;
+	color: white;
+	font-family: var(--display-family);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight-bold);
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
+	overflow: hidden;
+	z-index: 1;
+	padding: 0.8rem 2rem;
+	background-color: var(--color-primary);
+	color: white;
 }
