@@ -6,10 +6,25 @@
 		flex-direction: row;
 	}
 	&-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: 50%;
 		padding: var(--spacing-l) var(--spacing-xl);
 		@include mq(medium) {
 			width: 100%;
+		}
+		p {
+			max-width: 400px;
+			// margin: 0 auto;
+		}
+
+		img {
+			max-width: 100%;
+			margin-bottom: 1.5rem;
+		}
+		.btn {
+			margin-top: 1.5rem;
 		}
 	}
 

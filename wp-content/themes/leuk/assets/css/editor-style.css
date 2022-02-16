@@ -1716,6 +1716,9 @@ body.nav-open {
   }
 }
 .services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
   padding: var(--spacing-l) var(--spacing-xl);
 }
@@ -1723,6 +1726,16 @@ body.nav-open {
   .services-item {
     width: 100%;
   }
+}
+.services-item p {
+  max-width: 400px;
+}
+.services-item img {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+.services-item .btn {
+  margin-top: 1.5rem;
 }
 
 .social-links {
