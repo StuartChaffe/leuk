@@ -7,9 +7,9 @@ $contentright = get_field('services_content_left');
 ?>
 <div class="services">
 	<div class="services-item bkg--grey">
-		testt
+		<?php echo $contentleft; ?>
 	</div>
 	<div class="services-item">
-		testts
+		<?php echo $contentright; ?>
 	</div>
 </div>
