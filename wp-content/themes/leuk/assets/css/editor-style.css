@@ -1341,7 +1341,7 @@ span.btn:hover {
 }
 @media (min-width: 50em) {
   .menu .sub-menu {
-    min-width: 250px;
+    min-width: 260px;
     margin: 0 1rem;
     position: absolute;
     transform: translateY(20px) translateX(-50%);
@@ -1349,9 +1349,8 @@ span.btn:hover {
     visibility: hidden;
     transition: 0.2s ease;
     margin: 0;
-    padding: 2rem 1rem;
+    padding: 2rem;
     left: 50%;
-    text-align: center;
     background-color: white;
   }
   .menu .sub-menu:before {
@@ -1651,9 +1650,15 @@ body.nav-open {
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: var(--spacing);
-  padding-left: calc(var(--spacing-l) - 1px);
-  padding-right: calc(var(--spacing-l) - 1px);
+  padding-left: calc(var(--spacing-s) - 1px);
+  padding-right: calc(var(--spacing-s) - 1px);
   overflow: hidden;
+}
+@media (min-width: 70em) {
+  .posts {
+    padding-left: calc(var(--spacing-l) - 1px);
+    padding-right: calc(var(--spacing-l) - 1px);
+  }
 }
 .posts--title {
   width: 100%;
@@ -1667,9 +1672,10 @@ body.nav-open {
   text-decoration: none;
   flex-grow: 0;
   margin: var(--spacing-s) 0;
-  width: 100%;
+  margin-right: 20%;
+  width: calc(80% - (var(--spacing-s) * 2)) !important;
 }
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .posts-item {
     margin: var(--spacing-l);
     width: calc(100% / 3 - (var(--spacing-l) * 2)) !important;
@@ -1716,9 +1722,14 @@ body.nav-open {
   width: 100%;
 }
 .posts .swiper-wrapper .posts-item {
-  margin: var(--spacing-l);
+  margin-left: var(--spacing-s);
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 70em) {
+  .posts .swiper-wrapper .posts-item {
+    margin: var(--spacing-l);
+  }
 }
 .posts .swiper-button-next, .posts .swiper-rtl .swiper-button-prev {
   right: var(--spacing-l);
