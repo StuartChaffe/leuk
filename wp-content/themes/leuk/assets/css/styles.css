@@ -1731,6 +1731,22 @@ body.nav-open {
 
 .services {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .services {
+    flex-direction: row;
+  }
+}
+.services-item {
+  width: 50%;
+  padding: var(--spacing-l) var(--spacing-xl);
+}
+@media (min-width: 50em) {
+  .services-item {
+    width: 100%;
+  }
 }
 
 :root {
