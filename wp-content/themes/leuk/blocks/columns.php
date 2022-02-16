@@ -3,9 +3,10 @@
 * The template used for displaying a column block.
 */
 $bkg = get_field('bkg-colour');
+$linkid = get_field('link_id');
 ?>
 
-<section class="columns <?php echo $bkg ?>">
+<section class="columns <?php echo $bkg ?>"<?php if ($linkid) { ?> id="<?php echo $linkid; ?>"<?php } ?>>
 
 <?php if( have_rows('column') ) { ?>
 	<div class="columns--inner">

@@ -2037,6 +2037,7 @@ body.nav-open {
 }
 .text-image--content-inner p {
   margin-bottom: 2rem;
+  width: 100%;
 }
 .text-image--content-inner p:last-of-type {
   margin-bottom: 0;
