@@ -2,8 +2,8 @@
 /**
 * The template used for displaying a services block.
 */
-$contentleft = get_field('services_content_left');
-$contentright = get_field('services_content_left');
+$contentleft = get_field('contentright');
+$contentright = get_field('contentright');
 ?>
 <div class="services">
 	<div class="services-item bkg--grey">
