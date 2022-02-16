@@ -9,10 +9,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 50%;
+		width: 100%;
 		padding: var(--spacing-l) var(--spacing-xl);
 		@include mq(medium) {
-			width: 100%;
+			width: 50%;
 		}
 		p {
 			max-width: 400px;

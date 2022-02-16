@@ -1743,12 +1743,12 @@ body.nav-open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   padding: var(--spacing-l) var(--spacing-xl);
 }
 @media (min-width: 50em) {
   .services-item {
-    width: 100%;
+    width: 50%;
   }
 }
 .services-item p {
@@ -1953,10 +1953,10 @@ body.nav-open {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: 550px;
 }
 @media (min-width: 70em) {
   .text-image {
+    min-height: 550px;
     flex-direction: row;
   }
 }
@@ -1968,6 +1968,7 @@ body.nav-open {
   height: 100%;
   z-index: 1;
   position: relative;
+  padding: var(--spacing) 0;
 }
 @media (min-width: 70em) {
   .text-image--content-inner {
@@ -2020,8 +2021,13 @@ body.nav-open {
 .text-image--image-text {
   position: absolute;
   z-index: 9;
-  bottom: var(--spacing-l);
+  bottom: var(--spacing);
   color: white;
+}
+@media (min-width: 70em) {
+  .text-image--image-text {
+    bottom: var(--spacing-l);
+  }
 }
 .text-image--image-text h4 {
   width: calc(50% - var(--spacing-l));
@@ -2071,8 +2077,9 @@ body.nav-open {
 }
 .image--left .text-image--content-inner {
   margin-left: auto;
+  padding: var(--spacing) 0;
 }
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .image--left .text-image--content-inner {
     padding: var(--spacing-l) 0 var(--spacing-l) var(--spacing-l);
   }
