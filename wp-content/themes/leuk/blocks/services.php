@@ -2,7 +2,7 @@
 /**
 * The template used for displaying a services block.
 */
-$contentleft = get_field('contentright');
+$contentleft = get_field('contentleft');
 $contentright = get_field('contentright');
 ?>
 <div class="services">
