@@ -1729,6 +1729,10 @@ body.nav-open {
   }
 }
 
+.services {
+  display: flex;
+}
+
 :root {
   --swiper-theme-color: red;
 }

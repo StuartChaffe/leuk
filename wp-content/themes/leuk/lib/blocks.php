@@ -128,6 +128,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'content, scrolling' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'services',
+			'title'				=> __('Service list'),
+			'description'		=> __('Add a services block'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'columns',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'services' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'text-image',
 			'title'				=> __('Text with image'),
 			'description'		=> __('Add a standard text with image block'),
@@ -164,6 +175,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-posts',
 		'acf/posts',
 		'acf/scrolling-content',
+		'acf/services',
 		'acf/text-image',
 		// 'acf/testimonial',
 	);
