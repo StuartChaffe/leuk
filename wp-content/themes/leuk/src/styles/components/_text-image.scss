@@ -123,3 +123,11 @@
 		}
 	}
 }
+.image--right {
+	.text-image--image-text {
+		@include mq(medium) {
+			width: 50%;
+			margin-left: 50%;
+		}
+	}
+}

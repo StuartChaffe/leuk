@@ -2138,6 +2138,13 @@ body.nav-open {
   }
 }
 
+@media (min-width: 50em) {
+  .image--right .text-image--image-text {
+    width: 50%;
+    margin-left: 50%;
+  }
+}
+
 /* Stop links being clickable in the block editor */
 .acf-block-preview a {
   pointer-events: none !important;

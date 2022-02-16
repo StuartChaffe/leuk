@@ -2045,6 +2045,13 @@ body.nav-open {
   }
 }
 
+@media (min-width: 50em) {
+  .image--right .text-image--image-text {
+    width: 50%;
+    margin-left: 50%;
+  }
+}
+
 .u-bold {
   font-weight: bold !important;
 }
