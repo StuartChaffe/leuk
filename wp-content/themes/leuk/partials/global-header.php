@@ -10,7 +10,6 @@ $logo = get_field( 'logo');
 
 <header class="global-header">
 	<div class="global-header__inner">
-
 		<div class="global-header__logo"><a href="<?php echo home_url(); ?>">
 		<?php if ( $logo == 'logo-datacentre' ) { ?>
 			<img src="<?php echo $logodatacentre['url']; ?>" alt="<?php echo $logodatacentre['alt']; ?>" />
@@ -26,15 +25,11 @@ $logo = get_field( 'logo');
 		<div class="global-header--nav-contact">
 			<a href="/contact-us">Contact Us</a>
 		</div>
-
-
-
 		<button class="global-header--nav-btn" type="button">
 			<span class="global-header--nav-box">
 				<span class="global-header--nav-inner"><span>Show menu</span></span>
 			</span>
 		</button>
-
 		<nav class="global-header--nav global-header--nav__mobile">
 			<?php wp_nav_menu( array('theme_location' => 'mobile') ); ?>
 		</nav>
