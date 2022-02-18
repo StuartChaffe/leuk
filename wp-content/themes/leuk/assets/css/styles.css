@@ -893,6 +893,8 @@ span.btn:hover {
     margin: 0 1rem;
     position: absolute;
     transform: translateY(20px) translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
     transition: 0.2s ease;
     margin: 0;
     padding: 2rem;
