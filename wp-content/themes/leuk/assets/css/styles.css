@@ -804,11 +804,11 @@ span.btn:hover {
 .global-header--nav ul li a:hover:before {
   background-color: var(--color-primary);
 }
-.global-header--nav ul .current-menu-item > a {
+.global-header--nav ul .current_page_ancestor > a {
   position: relative;
 }
 @media (min-width: 50em) {
-  .global-header--nav ul .current-menu-item > a:before {
+  .global-header--nav ul .current_page_ancestor > a:before {
     content: "";
     position: absolute;
     bottom: 0rem;
@@ -893,22 +893,11 @@ span.btn:hover {
     margin: 0 1rem;
     position: absolute;
     transform: translateY(20px) translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
     transition: 0.2s ease;
     margin: 0;
     padding: 2rem;
     left: 50%;
     background-color: white;
-  }
-  .menu .sub-menu:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
   }
 }
 .menu .sub-menu li {
