@@ -102,6 +102,7 @@
 		&--image {
 			height: 45px;
 			width: 120px;
+			max-width: 30px;
 			@include mq($until: medium) {
 				width: 80px;
 			}

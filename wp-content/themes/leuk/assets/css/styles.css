@@ -2045,6 +2045,7 @@ body.nav-open {
 .text-image-list--image {
   height: 45px;
   width: 120px;
+  max-width: 30px;
 }
 @media (max-width: 49.99em) {
   .text-image-list--image {
