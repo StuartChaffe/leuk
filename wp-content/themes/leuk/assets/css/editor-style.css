@@ -817,6 +817,13 @@ span.btn:hover {
   padding-top: var(--spacing-xxl);
   padding-bottom: var(--spacing-xxl);
 }
+.content--padding__small {
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
+.content--padding__small h2, .content--padding__small h3, .content--padding__small h4, .content--padding__small h5 {
+  margin-top: 1rem !important;
+}
 .content > * {
   max-width: var(--content-width);
   margin-right: auto;

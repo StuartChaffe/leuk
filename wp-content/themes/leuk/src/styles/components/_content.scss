@@ -1,6 +1,15 @@
 .content {
 	padding-top: var(--spacing-xxl);
 	padding-bottom: var(--spacing-xxl);
+	&--padding {
+		&__small {
+			padding-top: var(--spacing);
+			padding-bottom: var(--spacing);
+			h2, h3, h4, h5 {
+				margin-top: 1rem !important;
+			}
+		}
+	}
 	> * {
 		max-width: var(--content-width);
 		margin-right: auto;
