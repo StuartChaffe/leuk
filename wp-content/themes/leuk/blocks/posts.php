@@ -30,7 +30,7 @@
 			<h4><strong><?php the_title(); ?></strong></h4>
 		</div>
 
-		<svg class="icon"><use xlink:href="#post-arrow"></use></svg>
+		<div class="posts-item__hover"><p>Read more</p> <svg class="icon"><use xlink:href="#post-arrow"></use></svg></div>
 	</a>
 <?php endwhile; wp_reset_query(); ?>
 </section>

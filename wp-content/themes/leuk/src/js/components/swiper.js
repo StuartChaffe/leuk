@@ -25,16 +25,16 @@ jQuery(document).ready(function($) {
 	})
 });
 
-var swiper = new Swiper(".posts", {
-	slidesPerView: 3,
-	// spaceBetween: 181,
-	watchOverflow: true,
-	// loop: true,
-	keyboard: {
-	  enabled: true,
-	},
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
-	},
-  });
+// var swiper = new Swiper(".posts", {
+// 	slidesPerView: 3,
+// 	// spaceBetween: 181,
+// 	watchOverflow: true,
+// 	// loop: true,
+// 	keyboard: {
+// 	  enabled: true,
+// 	},
+// 	navigation: {
+// 	  nextEl: ".swiper-button-next",
+// 	  prevEl: ".swiper-button-prev",
+// 	},
+//   });

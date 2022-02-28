@@ -90,29 +90,24 @@
 			height: 20px;
 		}
 	}
+}
 
-	.swiper-wrapper {
-		width: 100%;
-		.posts-item {
-			margin-left: var(--spacing-s);
-			display: flex;
-			flex-direction: column;
-			@include mq(large) {
-				margin: var(--spacing-l);
-			}
+.featured-posts {
+	display: inline-block;
+
+	&-item {
+		margin: 0 ;
+		width: 100% !important;
+		height: 100%;
+	}
+	.slick-slide > div {
+		margin: 0 var(--spacing);
+		height: 100%;
+		@include mq(medium) {
+			margin: 0 var(--spacing);
+		}
+		@include mq(xlarge) {
+			margin: 0 var(--spacing-l);
 		}
 	}
-	.swiper-button-next, .swiper-rtl .swiper-button-prev {
-		right: var(--spacing-l);
-		left: auto;
-		&:after {
-			content: url("../../src/icons/carousel-next-dark.svg");
-		}
-	}
-	// .swiper-button-prev, .swiper-rtl .swiper-button-next {
-	// 	left: var(--spacing-l);
-	// 	&:after {
-	// 		content: url("../../src/icons/carousel-next-dark.svg");
-	// 	}
-	// }
 }
