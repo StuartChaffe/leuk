@@ -30,7 +30,7 @@ $featuredposts = get_field( 'select_posts' );
 				<h4><strong><?php echo $title; ?></strong></h4>
 			</div>
 
-			<svg class="icon"><use xlink:href="#post-arrow"></use></svg>
+			<div class="posts-item__hover"><p>Read more</p> <svg class="icon"><use xlink:href="#post-arrow"></use></svg></div>
 		</a>
 		<?php endforeach; ?>
 	</div>

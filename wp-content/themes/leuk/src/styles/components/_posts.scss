@@ -33,11 +33,23 @@
 			width: calc(100% / 3 - (var(--spacing-l) * 2)) !important;
 		}
 
+		&__hover {
+			position: absolute;
+			display: flex;
+			right: var(--spacing-s);
+			bottom: var(--spacing-s);
+			opacity: 0;
+			align-items: center;
+			transform: translateY(var(--spacing-s));
+			transition: all .2s ease-in-out;
+			font-size: var(--font-size-small);
+		}
+
 		&:hover {
 			// background-color: var(--color-grey-light);
 			text-decoration: none;
 			color: var(--color-text-base);
-			.icon {
+			.posts-item__hover {
 				opacity: 1;
 				transform: translateY(0)
 			}
@@ -73,14 +85,9 @@
 			padding: var(--spacing) var(--spacing) var(--spacing-l) var(--spacing);
 		}
 		.icon {
-			position: absolute;
-			right: var(--spacing-s);
-			bottom: var(--spacing-s);
-			width: 12px;
-			height: 24px;
-			opacity: 0;
-			transform: translateY(var(--spacing-s));
-			transition: all .2s ease-in-out;
+			margin-left: 0.5rem;
+			width: 8px;
+			height: 20px;
 		}
 	}
 

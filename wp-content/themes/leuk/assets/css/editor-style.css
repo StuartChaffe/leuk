@@ -1567,11 +1567,22 @@ body.nav-open {
     width: calc(100% / 3 - (var(--spacing-l) * 2)) !important;
   }
 }
+.posts-item__hover {
+  position: absolute;
+  display: flex;
+  right: var(--spacing-s);
+  bottom: var(--spacing-s);
+  opacity: 0;
+  align-items: center;
+  transform: translateY(var(--spacing-s));
+  transition: all 0.2s ease-in-out;
+  font-size: var(--font-size-small);
+}
 .posts-item:hover {
   text-decoration: none;
   color: var(--color-text-base);
 }
-.posts-item:hover .icon {
+.posts-item:hover .posts-item__hover {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1595,14 +1606,9 @@ body.nav-open {
   padding: var(--spacing) var(--spacing) var(--spacing-l) var(--spacing);
 }
 .posts-item .icon {
-  position: absolute;
-  right: var(--spacing-s);
-  bottom: var(--spacing-s);
-  width: 12px;
-  height: 24px;
-  opacity: 0;
-  transform: translateY(var(--spacing-s));
-  transition: all 0.2s ease-in-out;
+  margin-left: 0.5rem;
+  width: 8px;
+  height: 20px;
 }
 .posts .swiper-wrapper {
   width: 100%;
