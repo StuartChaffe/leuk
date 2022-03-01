@@ -1631,7 +1631,7 @@ body.nav-open {
   height: 100%;
 }
 .featured-posts .slick-slide > div {
-  margin: 0 var(--spacing);
+  margin: 0 var(--spacing-l);
   height: 100%;
 }
 @media (min-width: 50em) {
@@ -1878,15 +1878,8 @@ body.nav-open {
 }
 .slick-prev:before,
 .slick-next:before {
-  height: 36px;
-  width: 14px;
-}
-@media only screen and (min-width: 1330px) {
-  .slick-prev:before,
-.slick-next:before {
-    height: 71px;
-    width: 27px;
-  }
+  height: 62px;
+  width: 34px;
 }
 
 .slick-prev {
