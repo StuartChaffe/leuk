@@ -15,6 +15,7 @@
 ?>
 
 <?php if ($posts->have_posts()) : ?>
+<div class="container">
 <section class="posts">
 <?php while($posts->have_posts()) : $posts->the_post();
 	$author_id=$posts->post_author;
@@ -34,4 +35,5 @@
 	</a>
 <?php endwhile; wp_reset_query(); ?>
 </section>
+</div>
 <?php endif; ?>
