@@ -5,12 +5,15 @@
 $content = get_field('cta_content');
 $button = get_field('cta_button');
 $bkg = get_field('bkg-colour');
+$padding = get_field('cta_padding');
 ?>
 
-<section class="cta <?php echo $bkg ?>">
+<section class="cta <?php echo $bkg ?><?php if ( $padding == 'padding-large' ) { ?> cta--padding__large<?php } ?>">
 	<div class="cta--inner container">
 		<?php if ($content) { ?>
+		<div class="cta--content">
 			<?php echo $content; ?>
+		</div>
 		<?php } ?>
 
 		<?php if ($button) { ?>
