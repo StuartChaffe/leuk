@@ -28,6 +28,9 @@
 .contact {
 	background-color: var(--color-grey-mid);
 }
+.featured-posts--slider {
+	display: flex;
+}
 
 input[type="email"],
 input[type="number"],
