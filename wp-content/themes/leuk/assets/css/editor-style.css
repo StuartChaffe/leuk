@@ -814,8 +814,15 @@ span.btn:hover {
 }
 
 .content {
-  padding-top: var(--spacing-xxl);
-  padding-bottom: var(--spacing-xxl);
+  padding: var(--spacing-l) 2rem;
+}
+@media (min-width: 50em) {
+  .content {
+    padding-top: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xxl);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .content--padding__small {
   padding-top: var(--spacing);
@@ -828,6 +835,9 @@ span.btn:hover {
   max-width: var(--content-width);
   margin-right: auto;
   margin-left: auto;
+}
+.content .wp-caption {
+  max-width: 100%;
 }
 .content a {
   color: var(--link-color);
@@ -1585,15 +1595,17 @@ body.nav-open {
   text-align: left;
   text-decoration: none;
   flex-grow: 0;
-  margin: var(--spacing-s) 0;
-  margin-right: 20%;
-  width: calc(80% - (var(--spacing-s) * 2)) !important;
+  margin: var(--spacing-l) auto 0 auto;
+  width: calc(90% - (var(--spacing-s) * 2)) !important;
 }
 @media (min-width: 70em) {
   .posts-item {
     margin: var(--spacing-l);
     width: calc(100% / 3 - (var(--spacing-l) * 2)) !important;
   }
+}
+.posts-item:last-of-type {
+  margin-bottom: var(--spacing-l);
 }
 .posts-item__hover {
   position: absolute;

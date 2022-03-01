@@ -25,12 +25,15 @@
 		text-align: left;
 		text-decoration: none;
 		flex-grow: 0;
-		margin: var(--spacing-s) 0;
-		margin-right: 20%;
-		width: calc(80% - (var(--spacing-s) * 2)) !important;
+		margin: var(--spacing-l) auto 0 auto;
+		// margin-right: 20%;
+		width: calc(90% - (var(--spacing-s) * 2)) !important;
 		@include mq(large) {
 			margin: var(--spacing-l);
 			width: calc(100% / 3 - (var(--spacing-l) * 2)) !important;
+		}
+		&:last-of-type {
+			margin-bottom: var(--spacing-l);
 		}
 
 		&__hover {

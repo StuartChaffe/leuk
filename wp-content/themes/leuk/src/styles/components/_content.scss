@@ -1,6 +1,11 @@
 .content {
-	padding-top: var(--spacing-xxl);
-	padding-bottom: var(--spacing-xxl);
+	padding: var(--spacing-l) 2rem;
+	@include mq(medium) {
+		padding-top: var(--spacing-xxl);
+		padding-bottom: var(--spacing-xxl);
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 	&--padding {
 		&__small {
 			padding-top: var(--spacing);
@@ -15,7 +20,9 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
-
+	.wp-caption {
+		max-width: 100%;
+	}
 	a {
 		color: var(--link-color);
 		text-decoration: underline;
