@@ -792,7 +792,7 @@ span.btn:hover {
   font-weight: var(--font-weight-normal);
   height: 100%;
   position: relative;
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding: 1rem 0;
   margin: 0 2.5rem;
@@ -800,6 +800,9 @@ span.btn:hover {
   transition: all 0.1s ease-in-out;
 }
 @media (min-width: 50em) {
+  .global-header--nav ul li a {
+    display: flex;
+  }
   .global-header--nav ul li a:before {
     content: "";
     position: absolute;
@@ -872,7 +875,9 @@ span.btn:hover {
 .global-header--nav__mobile ul li a {
   color: var(--color-text-base);
   font-size: 1.2rem;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-primary);
+  margin-bottom: 1rem;
 }
 .global-header--nav__mobile ul li a:hover {
   color: var(--color-text-base);
@@ -925,6 +930,7 @@ span.btn:hover {
   display: inline-block;
   color: var(--color-text-base);
   text-decoration: none;
+  border-bottom: 0;
 }
 @media (min-width: 50em) {
   .menu .sub-menu li a {
