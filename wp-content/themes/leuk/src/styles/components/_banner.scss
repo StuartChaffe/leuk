@@ -8,7 +8,7 @@
 	background-position: center center;
 	width: 100%;
 	min-height: 90vh;
-	padding-top: var(--spacing);
+	padding-top: var(--spacing-xxl);
 	padding-bottom: var(--spacing-l);
 	@include mq($until: medium) {
 		background-image: none !important;
@@ -17,6 +17,7 @@
 		flex-direction: row;
 		height: 100vh;
 		min-height: 600px;
+		padding-top: var(--spacing);
 		padding-bottom: var(--spacing-xl);
 		// padding: var(--spacing-xxl);
 	}

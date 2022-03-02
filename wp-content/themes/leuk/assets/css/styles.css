@@ -1213,7 +1213,7 @@ body.nav-open {
   background-position: center center;
   width: 100%;
   min-height: 90vh;
-  padding-top: var(--spacing);
+  padding-top: var(--spacing-xxl);
   padding-bottom: var(--spacing-l);
 }
 @media (max-width: 49.99em) {
@@ -1226,6 +1226,7 @@ body.nav-open {
     flex-direction: row;
     height: 100vh;
     min-height: 600px;
+    padding-top: var(--spacing);
     padding-bottom: var(--spacing-xl);
   }
 }
