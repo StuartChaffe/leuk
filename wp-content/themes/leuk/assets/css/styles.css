@@ -1512,11 +1512,11 @@ body.nav-open {
 }
 
 .contact {
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  text-align: center;
-  padding-top: var(--spacing-l) !important;
+  padding-top: var(--spacing-xxl) !important;
   padding-bottom: var(--spacing-l) !important;
 }
 @media (min-width: 50em) {
@@ -1529,13 +1529,14 @@ body.nav-open {
 }
 .contact-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  padding: 0 var(--spacing-l);
+  margin-bottom: var(--spacing);
   color: white;
 }
 @media (min-width: 50em) {
   .contact-item {
+    padding: 0 var(--spacing-l);
     flex-direction: column;
     width: calc(100% / 3);
   }
@@ -1558,7 +1559,16 @@ body.nav-open {
 .contact-form {
   background-color: var(--color-grey);
   padding: var(--spacing);
-  width: 350px;
+  width: 100%;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+@media (min-width: 50em) {
+  .contact-form {
+    width: 350px;
+    max-width: 100%;
+    flex-direction: row;
+  }
 }
 
 .cta {
