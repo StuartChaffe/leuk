@@ -169,31 +169,52 @@ $slick-opacity-not-active: 0.25 !default;
 	// 	width: 27px;
 	// }
 	&:before {
-		height: 62px;
-    	width: 34px;
-	}
-}
-
-.slick-prev {
-	left: 0;
-	&:before {
-		margin-left: 0;
-		right: 0;
-		transition: .2s all ease-in-out;
-		content: url("../../src/icons/arrow-carousel--prev.svg");
-		[dir="rtl"] & {
-			content: url("../../src/icons/arrow-carousel--prev.svg");
+		height: 30px;
+		width: 15px;
+		@include mq(medium) {
+			height: 62px;
+			width: 34px;
 		}
 	}
 }
 
+.slick-prev {
+	// left: 0;
+	// display: none;
+	// &:before {
+	// 	margin-left: 0;
+	// 	right: 0;
+	// 	transition: .2s all ease-in-out;
+	// 	content: url("../../src/icons/carousel-next-dark-small.svg");
+	// 	transform: translateY(-50%) rotate(180deg);
+	// 	@include mq(medium) {
+	// 		content: url("../../src/icons/carousel-next-dark.svg");
+	// 	}
+	// 	[dir="rtl"] & {
+	// 		content: url("../../src/icons/carousel-next-dark-small.svg");
+	// 		@include mq(medium) {
+	// 			content: url("../../src/icons/carousel-next-dark.svg");
+	// 		}
+	// 	}
+	// }
+}
+
 .slick-next {
-	right: 0;
+	right: 0.5rem;
+	@include mq(medium) {
+		right: 0;
+	}
 	&:before {
 		transition: .2s all ease-in-out;
-		content: url("../../src/icons/carousel-next-dark.svg");
-		[dir="rtl"] & {
+		content: url("../../src/icons/carousel-next-dark-small.svg");
+		@include mq(medium) {
 			content: url("../../src/icons/carousel-next-dark.svg");
+		}
+		[dir="rtl"] & {
+			content: url("../../src/icons/carousel-next-dark-small.svg");
+			@include mq(medium) {
+				content: url("../../src/icons/carousel-next-dark.svg");
+			}
 		}
 	}
 }

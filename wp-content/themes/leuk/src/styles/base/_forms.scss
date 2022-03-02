@@ -80,6 +80,7 @@ input[type="button"] {
 	padding: 0.8rem 2rem;
 	background-color: var(--color-primary);
 	color: white;
+	-webkit-appearance: none !important;
 }
 
 input[type="submit"].center,
