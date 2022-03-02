@@ -1212,8 +1212,7 @@ body.nav-open {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 90vh;
-  min-height: 600px;
+  min-height: 90vh;
   padding-top: var(--spacing);
   padding-bottom: var(--spacing-l);
 }
