@@ -1728,7 +1728,9 @@ body.nav-open {
 .scrolling-content--content {
   margin-top: auto;
   width: 100%;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 }
 .scrolling-content--content > div {
   display: flex;
