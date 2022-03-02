@@ -27,7 +27,7 @@ $featuredposts = get_field( 'select_posts' );
 				<?php echo get_the_post_thumbnail($featuredpost); ?>
 			</div>
 			<div class="posts-item--content">
-				<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p>/</p>&nbsp;<p><?php echo $name; ?></p></div>
+				<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p class="color--red">//</p>&nbsp;<p><?php echo $name; ?></p></div>
 				<h4><strong><?php echo $title; ?></strong></h4>
 			</div>
 
