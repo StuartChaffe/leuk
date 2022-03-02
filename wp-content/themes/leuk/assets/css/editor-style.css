@@ -508,6 +508,7 @@ pre {
 @media (max-width: 49.99em) {
   .banner--text img {
     width: 80%;
+    display: none;
   }
 }
 .banner--button {
