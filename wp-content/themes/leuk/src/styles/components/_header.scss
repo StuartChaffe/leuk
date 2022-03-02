@@ -32,13 +32,13 @@
 
 	&--nav {
 		display: none;
-		@media only screen and (min-width: 880px) {
+		@media only screen and (min-width: 1030px) {
 			display: flex;
 			align-items: center;
 			height: 100%;
 		}
 		&-contact {
-			@media only screen and (max-width: 879px) {
+			@media only screen and (max-width: 1029px) {
 				display: none;
 			}
 			a {
@@ -152,7 +152,7 @@
 			// margin-top: 7px;
 			z-index: 4;
 			padding: 0;
-			@media only screen and (min-width: 880px) {
+			@media only screen and (min-width: 1030px) {
 				display: none;
 			}
 		}
@@ -169,7 +169,7 @@
 			background: transparent;
 			transition: all 0.2s ease-in-out;
 			display: block;
-			@media only screen and (min-width: 880px) {
+			@media only screen and (min-width: 1030px) {
 				display: none;
 			}
 			ul {

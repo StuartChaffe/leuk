@@ -742,14 +742,14 @@ span.btn:hover {
 .global-header--nav {
   display: none;
 }
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 1030px) {
   .global-header--nav {
     display: flex;
     align-items: center;
     height: 100%;
   }
 }
-@media only screen and (max-width: 879px) {
+@media only screen and (max-width: 1029px) {
   .global-header--nav-contact {
     display: none;
   }
@@ -858,7 +858,7 @@ span.btn:hover {
   z-index: 4;
   padding: 0;
 }
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 1030px) {
   .global-header--nav-btn {
     display: none;
   }
@@ -876,7 +876,7 @@ span.btn:hover {
   transition: all 0.2s ease-in-out;
   display: block;
 }
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 1030px) {
   .global-header--nav__mobile {
     display: none;
   }
