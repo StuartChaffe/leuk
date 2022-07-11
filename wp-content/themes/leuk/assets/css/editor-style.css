@@ -1503,14 +1503,14 @@ span.btn:hover {
   min-height: 100%;
 }
 
-.container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .main, .banner--content, .columns--inner, .contact, .global-footer__inner {
+.container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .logos-inner, .main, .banner--content, .columns--inner, .contact, .global-footer__inner {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-width);
 }
 @media (min-width: 50em) {
-  .container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .main, .banner--content, .columns--inner, .contact, .global-footer__inner {
+  .container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .logos-inner, .main, .banner--content, .columns--inner, .contact, .global-footer__inner {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -1561,6 +1561,34 @@ body .bkg--image {
 
 .color--red {
   color: var(--color-primary);
+}
+
+.logos-inner {
+  display: flex;
+}
+.logos-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0px;
+  padding: 2rem 1rem;
+}
+@media (min-width: 50em) {
+  .logos-item {
+    padding: 2rem;
+  }
+}
+.logos-item:first-child {
+  padding-left: 0;
+}
+.logos-item:last-child {
+  padding-right: 0;
+}
+@media (min-width: 70em) {
+  .logos-item img {
+    max-width: 150px;
+    max-height: 80px;
+  }
 }
 
 body.nav-open {
