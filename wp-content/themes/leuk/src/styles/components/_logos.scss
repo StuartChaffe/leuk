@@ -1,4 +1,6 @@
 .logos {
+	padding-top: var(--spacing);
+	padding-bottom: var(--spacing);
 	&-inner {
 		@extend .container;
 		display: flex;

@@ -1093,6 +1093,10 @@ span.btn:hover {
   }
 }
 
+.logos {
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
 .logos-inner {
   display: flex;
 }

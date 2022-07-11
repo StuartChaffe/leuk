@@ -1563,6 +1563,10 @@ body .bkg--image {
   color: var(--color-primary);
 }
 
+.logos {
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+}
 .logos-inner {
   display: flex;
 }
