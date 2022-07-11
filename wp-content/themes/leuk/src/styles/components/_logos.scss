@@ -1,0 +1,30 @@
+.logos {
+	&-inner {
+		@extend .container;
+		display: flex;
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 1 1 0px;
+		padding: 2rem 1rem;
+		@include mq(medium) {
+			padding: 2rem;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+		img {
+			// max-width: 150px;
+			// max-height: 80px;
+			@include mq(large) {
+				max-width: 150px;
+				max-height: 80px;
+			}
+		}
+	}
+}

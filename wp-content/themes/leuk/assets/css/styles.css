@@ -415,14 +415,14 @@ input[type=button]:focus {
   min-height: 100%;
 }
 
-.container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .contact, .columns--inner, .banner--content, .global-footer__inner, .main {
+.container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .contact, .columns--inner, .banner--content, .global-footer__inner, .logos-inner, .main {
   margin: 0 auto;
   padding: 0 var(--spacing);
   width: 100%;
   max-width: var(--container-width);
 }
 @media (min-width: 50em) {
-  .container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .contact, .columns--inner, .banner--content, .global-footer__inner, .main {
+  .container, .text-image--image-text, .text-image--content, .swiper--content, .scrolling-content--content > div, .scrolling-content .location, .posts, .contact, .columns--inner, .banner--content, .global-footer__inner, .logos-inner, .main {
     padding: 0 var(--spacing-xl);
   }
 }
@@ -1090,6 +1090,34 @@ span.btn:hover {
 @media (min-width: 50em) {
   .menu-item-has-children > a:after {
     display: block;
+  }
+}
+
+.logos-inner {
+  display: flex;
+}
+.logos-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0px;
+  padding: 2rem 1rem;
+}
+@media (min-width: 50em) {
+  .logos-item {
+    padding: 2rem;
+  }
+}
+.logos-item:first-child {
+  padding-left: 0;
+}
+.logos-item:last-child {
+  padding-right: 0;
+}
+@media (min-width: 70em) {
+  .logos-item img {
+    max-width: 150px;
+    max-height: 80px;
   }
 }
 

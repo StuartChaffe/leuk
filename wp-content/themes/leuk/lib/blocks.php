@@ -106,6 +106,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'posts, featured' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'logos',
+			'title'				=> __('Logos'),
+			'description'		=> __('Add logos block'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'buddicons-replies',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'logos' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'posts',
 			'title'				=> __('Posts'),
 			'description'		=> __('Add all posts'),
@@ -173,6 +184,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		'acf/cta',
 		'acf/featured-posts',
+		'acf/logos',
 		'acf/posts',
 		'acf/scrolling-content',
 		'acf/services',
