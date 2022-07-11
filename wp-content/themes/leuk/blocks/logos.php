@@ -3,9 +3,15 @@
 * The template used for displaying a logos block.
 */
 $bkg = get_field('bkg-colour');
+$title = get_field('logos_title');
 ?>
 
 <section class="logos <?php echo $bkg ?>">
+
+<?php if ( $title ) { ?>
+	<div class="container u-center"><h3><?php echo $title; ?></h3></div>
+<?php } ?>
+
 <?php if( have_rows('logos') ) { ?>
 	<div class="logos-inner">
 		<?php if( have_rows('logos') ): ?>

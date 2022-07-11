@@ -28,6 +28,25 @@
             "placeholder": ""
         },
         {
+            "key": "field_62cbfb9ec8ef7",
+            "label": "Title",
+            "name": "logos_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62cbf26800729",
             "label": "Logos",
             "name": "logos",
@@ -92,5 +111,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1657533054
+    "modified": 1657535406
 }
