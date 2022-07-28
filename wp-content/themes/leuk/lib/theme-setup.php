@@ -100,3 +100,4 @@ function my_custom_styles( $init_array ) {
 	}
 // Attach callback to 'tiny_mce_before_init'
 add_filter( 'tiny_mce_before_init', 'my_custom_styles' );
+add_post_type_support( 'jobs', 'excerpt' );

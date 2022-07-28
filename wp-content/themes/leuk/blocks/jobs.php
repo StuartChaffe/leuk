@@ -26,9 +26,8 @@
 			<?php echo get_the_post_thumbnail(); ?>
 		</div>
 		<div class="posts-item--content">
-
-			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p class="color--red">//</p>&nbsp;<p><?php echo $name; ?></p></div>
 			<h4><strong><?php the_title(); ?></strong></h4>
+			<p><?php the_excerpt(); ?></p>
 		</div>
 
 		<div class="posts-item__hover"><p>Read more</p> <svg class="icon"><use xlink:href="#post-arrow"></use></svg></div>

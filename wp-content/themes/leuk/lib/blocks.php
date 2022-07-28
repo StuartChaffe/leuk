@@ -106,6 +106,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'posts, featured' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'jobs',
+			'title'				=> __('Jobs'),
+			'description'		=> __('Add all jobs'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'welcome-learn-more',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'jobs' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'logos',
 			'title'				=> __('Logos'),
 			'description'		=> __('Add logos block'),
@@ -195,6 +206,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		'acf/cta',
 		'acf/featured-posts',
+		'acf/jobs',
 		'acf/logos',
 		'acf/posts',
 		'acf/press-release',
