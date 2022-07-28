@@ -1,13 +1,13 @@
 {
-    "key": "group_61d1e303307f7",
-    "title": "All posts",
+    "key": "group_62e2afb79499a",
+    "title": "All press release",
     "fields": [],
     "location": [
         [
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/posts"
+                "value": "acf\/press-release"
             }
         ]
     ],
@@ -20,5 +20,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659023314
+    "modified": 1659023304
 }

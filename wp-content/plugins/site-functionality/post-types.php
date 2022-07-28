@@ -50,18 +50,18 @@ function origin_cpts() {
 	//     ),
 	// );
 	// register_post_type($post_type_name, $post_type_options);
-	
-	
 
-	$post_type_name		= "team";
-	$single_name		= "Team";
-	$plural_name		= "Teams";
+
+
+	$post_type_name		= "press-release";
+	$single_name		= "Press release";
+	$plural_name		= "Press releases";
 	$icon				= "dashicons-format-quote";
-	$gutenberg_enabled	= false;
-	
+	$gutenberg_enabled	= true;
+
 	$post_type_options = array(
 		'label'                 => $single_name,
-		'public'                => false,
+		'public'                => true,
 		'menu_icon'             => $icon,
 		'show_ui'               => true,
 		'show_in_menu'          => true,

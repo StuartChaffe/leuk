@@ -128,6 +128,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'posts, blogs' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'press-release',
+			'title'				=> __('Press release'),
+			'description'		=> __('Add all press release'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'calendar-alt',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'press, press release' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'scrolling-content',
 			'title'				=> __('Scrolling content'),
 			'description'		=> __('Add content over background image'),
@@ -186,6 +197,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/featured-posts',
 		'acf/logos',
 		'acf/posts',
+		'acf/press-release',
 		'acf/scrolling-content',
 		'acf/services',
 		'acf/text-image',
