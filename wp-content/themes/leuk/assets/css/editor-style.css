@@ -190,6 +190,10 @@ img.aligncenter {
   }
 }
 
+.red {
+  color: var(--color-primary) !important;
+}
+
 /* Box sizing rules */
 *,
 *::before,

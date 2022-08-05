@@ -86,6 +86,12 @@ function my_custom_styles( $init_array ) {
 			'wrapper' => false,
 		),
 		array(
+			'title' => 'Red',
+			'block' => 'span',
+			'classes' => 'red',
+			'wrapper' => false,
+		),
+		array(
 			'title' => 'Button',
 			'block' => 'span',
 			'classes' => 'btn btn--primary',
