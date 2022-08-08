@@ -22,31 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_621e3a972b909",
-            "label": "",
-            "name": "",
-            "type": "select",
-            "instructions": "padding-normal : Normal\r\npadding-large : Large",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": false,
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "multiple": 0,
-            "allow_null": 0,
-            "choices": [],
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value"
-        },
-        {
             "key": "field_6209048137730",
             "label": "Content",
             "name": "content",
@@ -109,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646148296
+    "modified": 1659975011
 }
