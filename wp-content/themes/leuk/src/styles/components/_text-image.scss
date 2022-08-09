@@ -116,6 +116,66 @@
 			}
 		}
 	}
+	&__small {
+		max-width: var(--content-width);
+		margin-right: auto;
+		margin-left: auto;
+		min-height: 0;
+		padding-bottom: var(--spacing-xl);
+		@include mq(medium) {
+			flex-direction: row;
+		}
+		.text-image--content {
+			// max-width: var(--content-width);
+			// margin-right: auto;
+			// margin-left: auto;
+			width: 100%;
+			padding: 0 2rem;
+			@include mq(medium) {
+				width: 50%;
+				padding: 0;
+			}
+			&-inner {
+				width: 100%;
+				padding: 0 var(--spacing-l) 0 0;
+				.text-image-list:first-of-type {
+					margin-top: 0;
+				}
+			}
+		}
+		.text-image--image {
+			background-image: none !important;
+			position: relative;
+			width: 100%;
+			margin-left: 0;
+			display: flex;
+			flex-direction: column;
+			padding: 0 2rem;
+			@include mq(medium) {
+				width: 50%;
+				padding: 0;
+			}
+			img {
+				display: block;
+				visibility: visible;
+			}
+			&-text {
+				position: relative;
+				padding: 0;
+				margin-left: 0 !important;
+				width: 100% !important;
+				bottom: 100%;
+				padding-top: 0.5rem;
+				h4 {
+					width: 80%;
+					font-size: var(--font-size-small);
+					font-weight: var(--font-weight-normal);
+					color: var(--color-text-base);
+				}
+			}
+
+		}
+	}
 }
 .image--left {
 	.text-image--image {
