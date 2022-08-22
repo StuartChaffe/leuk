@@ -1,13 +1,13 @@
 <?php
 /**
-* The template used for displaying all posts.
+* The template used for displaying all case study.
 */
 // $title = get_field('posts_title');
 // $intro = get_field('posts_intro');
 ?>
 <?php
 	$posts = new WP_Query( array(
-		'post_type' => 'press-release',
+		'post_type' => 'case-study',
 		'posts_per_page' => -1,
 		'orderby' => 'date',
 		'order' => 'DESC',
@@ -26,9 +26,8 @@
 			<?php echo get_the_post_thumbnail(); ?>
 		</div>
 		<div class="posts-item--content">
-
-			<div class="posts-item--meta"><p><?php echo get_the_date('d.m.y'); ?></p>&nbsp;<p class="color--red">//</p>&nbsp;<p><?php echo $name; ?></p></div>
 			<h4><strong><?php the_title(); ?></strong></h4>
+			<p><?php the_excerpt(); ?></p>
 		</div>
 
 		<div class="posts-item__hover"><p>Read more</p> <svg class="icon"><use xlink:href="#post-arrow"></use></svg></div>

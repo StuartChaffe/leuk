@@ -150,6 +150,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'press, press release' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'case-study',
+			'title'				=> __('Case study'),
+			'description'		=> __('Add all case study'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'calendar-alt',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'case study, work' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'scrolling-content',
 			'title'				=> __('Scrolling content'),
 			'description'		=> __('Add content over background image'),
@@ -200,6 +211,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 	return array(
 		'acf/banner',
 		'acf/carousel',
+		'acf/case-study',
 		'acf/change-content',
 		'acf/columns',
 		'acf/contact',
