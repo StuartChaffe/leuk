@@ -335,6 +335,39 @@
             ]
         },
         {
+            "key": "field_63049a32882e3",
+            "label": "Icon list direction",
+            "name": "list_direction",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_620672230a817",
+                        "operator": "==",
+                        "value": "Icon list"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Vertical": "Vertical",
+                "text-image__horizontal": "Horizontal (x2)"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_62064d4bdb38d",
             "label": "Button",
             "name": "button",
@@ -368,5 +401,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660039918
+    "modified": 1661246405
 }

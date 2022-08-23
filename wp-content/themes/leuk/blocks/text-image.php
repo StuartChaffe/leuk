@@ -9,9 +9,10 @@ $image = get_field('image');
 $linkid = get_field('link_id');
 $title = get_field('text-image-title');
 $size = get_field('text-image-size');
+$dir = get_field('list_direction');
 ?>
 
-<section class="text-image<?php if ( $size == 'text-image__small' ) { ?> <?php echo $size ?><?php } ?> <?php echo $bkg ?> <?php echo $image['text-image-position'] ?>"<?php if ($linkid) { ?> id="<?php echo $linkid; ?>"<?php } ?>>
+<section class="text-image<?php if ( $size == 'text-image__small' ) { ?> <?php echo $size ?><?php } ?> <?php echo $bkg ?> <?php echo $image['text-image-position'] ?> <?php echo $dir ?>"<?php if ($linkid) { ?> id="<?php echo $linkid; ?>"<?php } ?>>
 	<div class="text-image--content">
 		<div class="text-image--content-inner">
 			<?php echo $content ?>
@@ -20,6 +21,7 @@ $size = get_field('text-image-size');
 			<?php } ?>
 
 		<?php if( have_rows('list') ) { ?>
+			<div class="text-image-iconlist">
 			<?php while( have_rows('list') ): the_row();
 				$icon = get_sub_field('list_image');
 				$content = get_sub_field('list_content');
@@ -33,6 +35,7 @@ $size = get_field('text-image-size');
 					</div>
 				</div>
 			<?php endwhile; ?>
+			</div>
 		<?php } ?>
 
 			<?php if ($button) { ?>

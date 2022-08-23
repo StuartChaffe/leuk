@@ -2457,6 +2457,20 @@ body.nav-open {
   color: var(--color-text-base);
 }
 
+@media (min-width: 50em) {
+  .text-image__horizontal .text-image--content {
+    width: 100%;
+  }
+  .text-image__horizontal .text-image-iconlist {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .text-image__horizontal .text-image-iconlist .text-image-list {
+    width: 50%;
+  }
+}
+
 .image--left .text-image--image {
   margin-left: 0;
   margin-right: 50%;

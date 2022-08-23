@@ -177,6 +177,22 @@
 		}
 	}
 }
+
+.text-image__horizontal {
+	@include mq(medium) {
+		.text-image--content {
+			width: 100%;
+		}
+		.text-image-iconlist {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.text-image-list {
+				width: 50%;
+			}
+		}
+	}
+}
 .image--left {
 	.text-image--image {
 		margin-left: 0;
