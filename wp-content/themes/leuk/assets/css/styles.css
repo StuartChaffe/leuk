@@ -2367,7 +2367,7 @@ body.nav-open {
 .text-image-list {
   display: flex;
   align-items: flex-start;
-  margin-bottom: var(--spacing-l);
+  margin-bottom: calc(var(--spacing-xs) * 2);
 }
 @media (max-width: 49.99em) {
   .text-image-list {
