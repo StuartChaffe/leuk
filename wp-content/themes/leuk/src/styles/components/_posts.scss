@@ -114,3 +114,16 @@
 		}
 	}
 }
+
+.case-study {
+	padding: 0 var(--spacing);
+	.posts-item {
+		margin: var(--spacing) auto 0 auto;
+		// margin-right: 20%;
+		width: calc(90% - (var(--spacing) * 2)) !important;
+		@include mq(large) {
+			margin: var(--spacing);
+			width: calc(100% / 3 - (var(--spacing) * 2)) !important;
+		}
+	}
+}

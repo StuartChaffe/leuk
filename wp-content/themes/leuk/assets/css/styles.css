@@ -1749,6 +1749,20 @@ body.nav-open {
   }
 }
 
+.case-study {
+  padding: 0 var(--spacing);
+}
+.case-study .posts-item {
+  margin: var(--spacing) auto 0 auto;
+  width: calc(90% - (var(--spacing) * 2)) !important;
+}
+@media (min-width: 70em) {
+  .case-study .posts-item {
+    margin: var(--spacing);
+    width: calc(100% / 3 - (var(--spacing) * 2)) !important;
+  }
+}
+
 .scrolling-content {
   display: flex;
   height: 100vh;

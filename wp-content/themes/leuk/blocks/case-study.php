@@ -16,7 +16,7 @@
 
 <?php if ($posts->have_posts()) : ?>
 <div class="container">
-<section class="posts">
+<section class="posts case-study">
 <?php while($posts->have_posts()) : $posts->the_post();
 	$author_id=$posts->post_author;
 	$name = get_the_author_meta( 'display_name' , $author_id );
