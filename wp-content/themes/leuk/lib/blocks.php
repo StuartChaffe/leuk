@@ -106,6 +106,17 @@ function leuk_acf_blocks() {
 			'keywords'			=> array( 'posts, featured' ),
 		));
 		acf_register_block(array(
+			'name'				=> 'featured-case-study',
+			'title'				=> __('Featured case studies'),
+			'description'		=> __('Add featured case studies'),
+			'render_callback'	=> 'leuk_acf_block_render_callback',
+			'category'			=> 'leuk-blocks',
+			'icon'				=> 'screenoptions',
+			'align' 			=> 'wide',
+			'mode' 				=> 'preview',
+			'keywords'			=> array( 'posts, featured' ),
+		));
+		acf_register_block(array(
 			'name'				=> 'jobs',
 			'title'				=> __('Jobs'),
 			'description'		=> __('Add all jobs'),
@@ -218,6 +229,7 @@ function leuk_allowed_block_types( $allowed_blocks ) {
 		'acf/content',
 		'acf/cta',
 		'acf/featured-posts',
+		'acf/featured-case-study',
 		'acf/jobs',
 		'acf/logos',
 		'acf/posts',
