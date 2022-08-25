@@ -122,7 +122,7 @@
 		// margin-right: 20%;
 		width: calc(90% - (var(--spacing) * 2)) !important;
 		@include mq(large) {
-			margin: var(--spacing);
+			margin: var(--spacing-l) var(--spacing);
 			width: calc(100% / 3 - (var(--spacing) * 2)) !important;
 		}
 	}

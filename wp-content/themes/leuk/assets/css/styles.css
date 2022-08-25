@@ -1758,7 +1758,7 @@ body.nav-open {
 }
 @media (min-width: 70em) {
   .case-study .posts-item {
-    margin: var(--spacing);
+    margin: var(--spacing-l) var(--spacing);
     width: calc(100% / 3 - (var(--spacing) * 2)) !important;
   }
 }
