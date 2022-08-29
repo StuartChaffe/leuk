@@ -12,13 +12,10 @@ $menu = get_field( 'footer_menu', 'options');
 		<div class="global-footer--company">
 			<img src="/wp-content/uploads/Leuk-TDC-white.svg" alt="" width="250">
 			<?php echo $company; ?>
-		</div>
-
-		<div class="global-footer--content">
-			<?php echo $menu; ?>
-		</div>
-
-		<ul class="social-links">
+			<ul class="social-links">
+			<?php if(get_field('linkedin', 'options')): ?>
+				<li class="social-links__item"><a href="<?php the_field('linkedin', 'options'); ?>" class="social-links__link"><?php echo get_icon('linkedin'); ?></a></li>
+			<?php endif; ?>
 			<?php if(get_field('twitter', 'options')): ?>
 				<li class="social-links__item"><a href="<?php the_field('twitter', 'options'); ?>" class="social-links__link"><?php echo get_icon('twitter'); ?></a></li>
 			<?php endif; ?>
@@ -32,6 +29,11 @@ $menu = get_field( 'footer_menu', 'options');
 				<li class="social-links__item"><a href="<?php the_field('youtube', 'options'); ?>" class="social-links__link"><?php echo get_icon('youtube'); ?></a></li>
 			<?php endif; ?>
 			</ul>
+		</div>
+
+		<div class="global-footer--content">
+			<?php echo $menu; ?>
+		</div>
 	</div>
 	<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 </footer>
