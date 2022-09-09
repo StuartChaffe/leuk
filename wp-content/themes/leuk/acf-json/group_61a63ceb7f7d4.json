@@ -3,31 +3,6 @@
     "title": "Banner",
     "fields": [
         {
-            "key": "field_6206879429981",
-            "label": "Size",
-            "name": "banner_size",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Full": "Full",
-                "banner__small": "Small"
-            },
-            "default_value": false,
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
             "key": "field_61a6578f6ff5d",
             "label": "Image",
             "name": "banner_image",
@@ -55,7 +30,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
+                    "return_format": "Large",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -66,6 +41,57 @@
                     "max_size": "",
                     "mime_types": "",
                     "default_value": ""
+                },
+                {
+                    "key": "field_631b4d8e2b2af",
+                    "label": "Large (copy)",
+                    "name": "banner_image_large_copy",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "Large",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "default_value": ""
+                },
+                {
+                    "key": "field_631b4d4b2b2ae",
+                    "label": "Large (copy)",
+                    "name": "banner_image_large_copy",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "default_value": "",
+                    "sub_fields": [],
+                    "layout": "block"
                 },
                 {
                     "key": "field_61a6585c6ff5f",
@@ -166,5 +192,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644847056
+    "modified": 1662733721
 }
