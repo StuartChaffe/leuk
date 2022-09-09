@@ -48,8 +48,8 @@
 		background-color: var(--color-grey);
 		padding: var(--spacing);
 		width: 100%;
-		margin-left: auto;
-		margin-top: 2rem;
+		// margin-left: auto;
+		// margin-top: 2rem;
 		@include mq(medium) {
 			width: 350px;
 			max-width: 100%;

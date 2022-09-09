@@ -1594,8 +1594,6 @@ body.nav-open {
   background-color: var(--color-grey);
   padding: var(--spacing);
   width: 100%;
-  margin-left: auto;
-  margin-top: 2rem;
 }
 @media (min-width: 50em) {
   .contact-form {
