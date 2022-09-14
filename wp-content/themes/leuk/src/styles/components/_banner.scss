@@ -35,9 +35,9 @@
 		min-width: calc(100% + 2px);
 		min-height: calc(100% + 2px);
 		display: block;
-		@include mq(medium) {
-			display: none;
-		}
+		// @include mq(medium) {
+		// 	display: none;
+		// }
 	}
 	&--content {
 		@extend .container;

@@ -455,11 +455,6 @@ pre {
   min-height: calc(100% + 2px);
   display: block;
 }
-@media (min-width: 50em) {
-  .banner--image {
-    display: none;
-  }
-}
 .banner--content {
   display: flex;
   flex-direction: column;
