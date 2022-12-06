@@ -1372,7 +1372,34 @@ body.nav-open {
   background: black;
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
 }
-
+.banner--video {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  background: black;
+}
+@media (min-width: 50em) {
+  .banner--video {
+    height: 100%;
+  }
+}
+.banner--video video {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  min-height: 85vh;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .change-content {
   display: flex;
   flex-direction: column;
